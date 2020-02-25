@@ -1,0 +1,1972 @@
+/*header start*/
+#header > .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+  /* flex-wrap: wrap; */
+}
+.top-logo {
+  width: 136px;
+  line-height: 100px;
+}
+.top-logo a img {
+  width: 100%;
+}
+#header > .container > ul {
+  display: flex;
+  line-height: 100px;
+}
+#header > .container > ul > li {
+  padding-right: 40px;
+}
+#header > .container > ul > li > a {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-family: "Noto Sans TC";
+  
+}
+.showmenu img{
+  display: none;
+  width: 30px;
+}
+#header > .container > ul > li > a > img {
+  width: 50px;
+  margin-top: 20px;
+}
+#header > .container > ul > li > a:hover {
+  border-bottom: 2px solid rgb(105, 79, 31);
+}
+@media (min-width: 320px) and (max-width: 374px){
+  .showmenu{
+    margin-top: 25px;
+  }
+  .showmenu img{
+    display: block;
+  }
+  #header > .container > ul{
+    display: flex;
+    flex-direction: column;
+  }
+  #header > .container > ul li {
+    display: none;
+  }
+  #header > .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+ 
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .top-logo a img {
+    padding-left: 10px;
+  }
+  #header > .container > ul > li {
+    padding-right: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #header > .container > ul > li {
+    padding-right: 20px;
+  }
+  .top-logo a img {
+    padding-left: 10px;
+  }
+}
+
+/*search start*/
+#search {
+  /* height: 800px; */
+  /* background-color:#F5F5F5; */
+}
+#search > .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+.search-bar {
+  padding-top: 180px;
+}
+.search-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+  font-family: "Noto Sans TC";
+}
+.search-title img {
+  height: 32px;
+}
+.search-btn {
+  position: relative;
+  margin-top: 50px;
+}
+.search-btn > input {
+  border-radius: 30px;
+  border: 1px solid #f5f5f5;
+  font-size: 18px;
+  padding: 8px 8px;
+  width: 387px;
+  letter-spacing: 0.1em;
+  background-color: #f5f5f5;
+}
+
+.search-title {
+  line-height: 30px;
+}
+.search-btn img {
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  width: 48px;
+}
+.topmenu-img {
+  display: flex;
+  align-content: flex-end;
+  padding-right: 50px;
+}
+.topmenu-img img:nth-child(2) {
+  height: 400px;
+  align-self: center;
+}
+@media (min-width: 320px) and (max-width: 374px){
+  .topmenu-img {
+    display: none;
+  }
+  .search-bar {
+    padding-top: 0px;
+    padding-left: 10px;
+  }
+  .search-btn > input{
+    width: 100%;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .topmenu-img {
+    display: none;
+  }
+  .search-bar {
+    padding-top: 0px;
+    padding-left: 10px;
+  }
+  .search-btn > input{
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .topmenu-img {
+    display: none;
+  }
+  .search-bar {
+    padding-top: 0px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1010px) {
+  .topmenu-img {
+    display: none;
+  }
+}
+
+/*美食START*/
+#food-restaurant {
+  margin-top: 50px;
+  background-color: rgb(246, 242, 242);
+}
+#food-restaurant > .container {
+  max-width: 1140px !important;
+  width: 100%;
+  margin: auto;
+}
+.food-restaurant-title {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Noto Sans TC";
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.lobster {
+  font-family: "Lobster";
+  font-weight: 700;
+}
+.food-restaurant-title > span > img {
+  width: 25px;
+  height: 25px;
+}
+.food-restaurant-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.food-restaurant-card li {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+}
+.food-restaurant-card .box {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.527);
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.box-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Lobster", cursive;
+  color: white;
+  line-height: 150px;
+  /* line-height: 250px; */
+}
+.food-restaurant-card img {
+  width: 100%;
+  height: 100%;
+}
+.food-restaurant-card li:hover img {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: 1s;
+}
+@media (min-width: 320px) and (max-width: 374px){
+  .food-restaurant-card li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100px;
+  }
+  .box-title{
+    line-height: 100px;
+  }
+}
+@media (min-width: 375px) and (max-width: 500px) {
+  .food-restaurant-card li {
+    /* flex-basis: calc(100% / 1); */
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100px;
+  }
+  .box-title{
+    line-height: 100px;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px){
+  .food-restaurant-card li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 180px;
+  }
+  .box-title{
+    line-height: 180px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .food-restaurant-card li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 220px;
+  }
+  .box-title{
+    line-height: 220px;
+  }
+}
+
+/*分類START*/
+#food-type {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+#food-type > .container {
+  max-width: 1140px;
+  margin: auto;
+  position: relative;
+}
+.food-type-title {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Noto Sans TC";
+  margin-left: 20px;
+}
+.food-type-card-list1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.food-type-card-list1 li {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+}
+.food-type-card-list1 .box {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.527);
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+.box-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Noto Sans TC";
+  color: white;
+  /* line-height: 250px; */
+}
+.food-type-card-list1 img {
+  width: 100%;
+  height: 100%;
+  /* opacity: 0.6; */
+}
+.food-type-card-list1 li:hover img {
+  transform: scale(1.2);
+  transition: 1s;
+}
+.food-type-card-list2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.food-type-card-list2 li {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+}
+.food-type-card-list2 .box {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.527);
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+.food-type-card-list2 img {
+  width: 100%;
+  height: 100%;
+  /* opacity: 0.6; */
+}
+.food-type-card-list2 li:hover img {
+  transform: scale(1.2);
+  transition: 1s;
+}
+.say {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.say h3 {
+  font-family: "Noto Sans TC";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.say span {
+  font-family: "Noto Sans TC";
+  font-size: 18px;
+  font-weight: bold;
+}
+.corner-banner {
+  position: absolute;
+  top: 80%;
+  right: -10%;
+}
+@media (max-width: 992px) {
+  .corner-banner {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .say h3 {
+    font-size: 15px;
+  }
+  .say span {
+    font-size: 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px){
+  .food-type-card-list1 li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100px;
+  }
+  .food-type-card-list2 li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100px;
+  }
+  .box-title{
+    line-height: 100px;
+  }
+}
+@media (min-width: 375px) and (max-width: 500px) {
+  .food-type-card-list1 li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100px;
+  }
+  .food-type-card-list2 li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100px;
+  }
+  .box-title{
+    line-height: 100px;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px){
+
+  .food-type-card-list1 li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 180px;
+  }
+  .food-type-card-list2 li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 180px;
+  }
+  .box-title{
+    line-height: 180px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .food-type-card-list1 li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 220px;
+  }
+  .food-type-card-list2 li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 220px;
+  }
+  .box-title{
+    line-height: 220px;
+  }
+}
+
+/*左banner start*/
+.slide-left-banner {
+  position: absolute;
+  top: 120%;
+  left: 0;
+}
+@media (max-width: 992px) {
+  .slide-left-banner {
+    display: none;
+  }
+}
+
+/*右banner start*/
+.slide-right-banner {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+@media (max-width: 992px) {
+  .slide-right-banner {
+    display: none;
+  }
+}
+
+/*footer start*/
+#footer {
+  background-color: #f5f5f5;
+}
+#footer > .container {
+  max-width: 1140px;
+  margin: auto;
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+#footer > .container > ul > li > a > h1 {
+  font-size: 35px;
+  width: 245px;
+  font-family: "Lobster", cursive;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#footer > .container > ul > li > a > span {
+  font-family: "Lobster", cursive;
+
+  letter-spacing: 0.2em;
+}
+#footer > .container > ul {
+  display: flex;
+}
+#footer > .container > ul > li {
+  flex-basis: 300px;
+  line-height: 32px;
+}
+#footer > .container > ul > li > a {
+  display: block;
+  color: rgb(8, 0, 0);
+  font-weight: bold;
+  font-family: "Noto Sans TC";
+  text-decoration: none;
+  opacity: 0.5;
+}
+#footer > .container > ul > li > a:first-child {
+  opacity: 1;
+}
+.copyright {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 374px){
+  #footer > .container {
+    padding-top: 0px;
+  }
+  #footer > .container > ul {
+    flex-direction: column;
+  }
+  #footer > .container > ul > li {
+    padding-left: 0px;
+    flex-basis: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  #footer > .container > ul > li > a > h1 {
+    display: none;
+  }
+  #footer > .container > ul > li > a:first-child {
+    padding-bottom: 20px;
+    letter-spacing: 0.1em;
+  }
+  #footer > .container > ul > li > a > span {
+    display: none;
+  }
+  
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  #footer > .container {
+    padding-top: 0px;
+  }
+  #footer > .container > ul {
+    flex-direction: column;
+  }
+  #footer > .container > ul > li {
+    padding-left: 0px;
+    flex-basis: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  #footer > .container > ul > li > a > h1 {
+    display: none;
+  }
+  #footer > .container > ul > li > a:first-child {
+    padding-bottom: 20px;
+    letter-spacing: 0.1em;
+  }
+  #footer > .container > ul > li > a > span {
+    display: none;
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #footer > .container > ul > li {
+    padding-left: 20px;
+  }
+  #footer > .container > ul > li > a > h1 {
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #footer > .container > ul > li {
+    padding-left: 20px;
+  }
+  #footer > .container > ul > li > a > h1 {
+    padding-bottom: 10px;
+  }
+}
+/*product-search start*/
+#product-search {
+  padding-top: 30px;
+  /* background-color:#F5F5F5; */
+}
+#product-search > .container {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+  justify-content: space-between;
+  padding-bottom: 96px;
+  position: relative;
+}
+#product-search > .container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  opacity: 0.4;
+  background-color: rgb(192, 222, 235);
+  bottom: 10px;
+}
+/* #product-search>.container input{
+    border-radius: 30px;
+    font-size: 15px;
+   
+  } */
+#product-search > .container > .product-search-bar > input {
+  border-radius: 30px;
+  font-size: 16px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  padding-left: 8px;
+  letter-spacing: 0.2em;
+  width: 350px;
+}
+.product-search-bar {
+  position: relative;
+}
+.product-search-bar input {
+  width: 467px;
+  line-height: 32px;
+}
+.product-search-bar a img {
+  position: absolute;
+
+  left: 318px;
+  width: 42px;
+}
+.product-sort {
+  display: flex;
+}
+.product-sort > li {
+  flex-basis: calc(100% / 4 -30px);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.product-sort a {
+  color: black;
+}
+.critic {
+  width: 130px;
+  height: 30px;
+}
+
+.critic-open {
+  display: none;
+}
+.critic-open li {
+  width: 130px;
+  height: 39px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.critic-open li a {
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+}
+.critic > a {
+  font-family: "Noto Sans TC";
+  color: black;
+  background-color: rgb(190, 184, 184);
+  border-radius: 30px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  line-height: 30px;
+  display: block;
+}
+.critic-open a {
+  text-align: left;
+  color: white;
+  font-size: 12px;
+}
+.critic a img {
+  width: 6px;
+}
+.distance {
+  width: 130px;
+  height: 30px;
+  text-align: center;
+}
+.distance > a {
+  background-color: rgb(190, 184, 184);
+  border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  line-height: 30px;
+  display: block;
+}
+.distance-open {
+  display: none;
+}
+.distance-open li {
+  width: 130px;
+  height: 30px;
+}
+.distance-open li a {
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+.distance a {
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  line-height: 30px;
+  display: block;
+}
+.distance a img {
+  width: 6px;
+}
+.consumption {
+  width: 130px;
+  height: 30px;
+  text-align: center;
+}
+.consumption > a {
+  background-color: rgb(190, 184, 184);
+  border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  line-height: 30px;
+  display: block;
+}
+.consumption-open {
+  display: none;
+}
+.consumption-open li {
+  width: 130px;
+  height: 30px;
+}
+.consumption-open li a {
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+.consumption a {
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  line-height: 30px;
+  display: block;
+}
+.consumption a img {
+  width: 6px;
+}
+.open {
+  width: 120px;
+  margin-right: 100px;
+}
+.open span {
+  font-family: "Noto Sans TC";
+  font-size: 25px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.critic > a.color,
+.color {
+  background-color: rgb(74, 181, 243);
+}
+.distance > a.color,
+.color {
+  background-color: rgb(74, 181, 243);
+}
+.consumption > a.color,
+.color {
+  background-color: rgb(74, 181, 243);
+}
+.border-radius-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.border-radius-bottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media (min-width: 375px) and (max-width: 413px) {
+  #product-search > .container {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  #product-search > .container > .product-search-bar > input {
+    margin-left: 18px;
+    width: 90%;
+  }
+  .product-search-bar {
+    margin-bottom: 20px;
+  }
+  .product-search-bar a img {
+    top: 0%;
+    left: 85%;
+  }
+  .product-sort {
+    flex-direction: column;
+  }
+  .product-sort li {
+    margin-bottom: 20px;
+    width: 90%;
+  }
+}
+@media (min-width: 414px) and (max-width: 767px) {
+  #product-search > .container {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  #product-search > .container > .product-search-bar > input {
+    margin-left: 18px;
+    
+  }
+  .product-search-bar {
+    margin-bottom: 20px;
+  }
+  .product-search-bar a img {
+    top: 0%;
+    left: 80%;
+  }
+  .product-sort {
+    flex-direction: column;
+  }
+  .product-sort li {
+    margin-bottom: 20px;
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1365px) {
+  #product-search > .container {
+    flex-direction: column;
+  }
+  .product-search-bar {
+    margin-bottom: 40px;
+  }
+  .product-sort {
+    margin-left: 70px;
+  }
+}
+/*product-restaurant start*/
+#product-restaurant {
+  margin-bottom: 100px;
+}
+#product-restaurant > .container {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+  justify-content: space-between;
+}
+.product-info {
+  display: flex;
+  padding-top: 100px;
+}
+.restaurant-photo a img {
+  width: 150px;
+}
+.restaurant-info {
+  padding-left: 50px;
+}
+.restaurant-info-content a {
+  font-family: "Noto Sans TC";
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans TC", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.star {
+  font-weight: bold;
+  font-size: 18px;
+}
+.star img {
+  width: 10px;
+}
+.rate a {
+  text-decoration: none;
+  color: black;
+
+  letter-spacing: 0.1em;
+}
+.time span {
+  font-size: 15px;
+  margin-left: 10px;
+  letter-spacing: 0.1em;
+}
+.time img {
+  width: 18px;
+}
+.location span {
+  font-size: 15px;
+  margin-left: 10px;
+}
+.location img {
+  width: 18px;
+}
+.phone span {
+  font-size: 15px;
+  margin-left: 10px;
+  letter-spacing: 0.1em;
+}
+.phone img {
+  width: 18px;
+}
+.product-restaurant-list {
+  display: flex;
+  flex-direction: column;
+}
+.product-search-total > span {
+  color: black;
+  opacity: 0.6;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  padding-left: 15px;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .product-info {
+    flex-direction: column;
+  }
+  .restaurant-photo a img {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .restaurant-info-content h2 {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1365px) {
+  .product-restaurant-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurant-photo a img {
+    width: 100%;
+    margin-left: 40px;
+  }
+  .restaurant-info {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+}
+.restaurant-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* padding-top: 80px; */
+}
+.storefront-environment {
+  padding-left: 300px;
+}
+#storefront > img {
+  width: 380px;
+}
+#storefront-photo > img {
+  width: 73px;
+}
+.storefront-map {
+  padding-left: 300px;
+}
+.active {
+  border: 2px solid red;
+}
+.product-comment {
+  padding-left: 300px;
+}
+.product-comment > .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+.write-comment {
+  background-color: #bcaaa4;
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+}
+.write-comment > img {
+  width: 30px;
+}
+.write-comment > span a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Noto Sans TC";
+  line-height: 50px;
+  font-size: 22px;
+  color: #fff;
+}
+.product-comment-content {
+  display: none;
+  max-width: 600px;
+  height: 555px;
+  position: fixed;
+  top: 25%;
+  margin-top: -150px;
+  background: #fff;
+  z-index: 3;
+  left: 50%;
+  margin-left: -300px;
+  border-radius: 15px;
+}
+.product-comment-form > .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  margin: auto;
+}
+.product-comment-form-name {
+  padding-bottom: 20px;
+}
+.product-comment-form-name span {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.product-comment-form-member {
+  display: flex;
+}
+.product-comment-form-member img {
+  width: 80px;
+  margin-left: 70px;
+}
+.product-comment-form-member-name {
+  margin-left: 20px;
+  margin-right: 200px;
+}
+.product-comment-form-member-name > h3 {
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.product-comment-form-member-name > h4 {
+  font-size: 14px;
+  color: black;
+  opacity: 0.5;
+  line-height: 5px;
+}
+.product-comment-form-star {
+  margin-left: 160px;
+  padding: 10px;
+}
+.product-comment-form-star img {
+  padding-left: 10px;
+  width: 30px;
+}
+.text-ident {
+  margin-left: 180px;
+  margin-right: 100px;
+}
+.determine {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+  padding-top: 20px;
+}
+.cancel {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  background-color: rgb(216, 208, 206);
+}
+.cancel a {
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.release {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  background-color: rgb(126, 198, 216);
+  margin-left: 20px;
+}
+.release a {
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.restaurant-favorite {
+  background-color: #bcaaa4;
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+}
+.restaurant-favorite > img {
+  width: 20px;
+}
+.restaurant-favorite span a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Noto Sans TC";
+  line-height: 50px;
+  font-size: 22px;
+  color: #fff;
+}
+.comment > .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.comment-list {
+  width: 400px;
+  margin-bottom: 30px;
+}
+.comment-list > ul {
+  display: flex;
+  max-width: 1140px;
+  flex-wrap: wrap;
+}
+.comment-list h3 {
+  font-family: "Noto Sans TC";
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px;
+}
+.comment-list span {
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 22px;
+}
+.comment-list p {
+  width: 100%;
+  margin-top: 20px;
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  font-family: "Noto Sans TC";
+}
+/* restaurant mask*/
+.restaurant-details-mask {
+  display: none;
+  max-width: 600px;
+  height: 100%;
+  position: fixed;
+  top: 20%;
+  margin-top: -150px;
+  background: #fff;
+  z-index: 3;
+  left: 50%;
+  margin-left: -300px;
+  overflow-y: auto;
+  position: fixed;
+}
+.restaurant-details-mask
+  > .container
+  > .restaurant-details
+  > .storefront-environment {
+  padding-left: 0px;
+  margin-bottom: 20px;
+}
+.restaurant-details-mask
+  > .container
+  > .restaurant-details
+  > .storefront-environment
+  > #storefront
+  > img {
+  width: 600px;
+  margin-bottom: 20px;
+}
+.restaurant-details-mask
+  > .container
+  > .restaurant-details
+  > .storefront-environment
+  > #storefront-photo
+  > img {
+  width: 110px;
+}
+.restaurant-details-mask > .container > .restaurant-details > .storefront-map {
+  padding-left: 0px;
+  width: 100%;
+}
+.restaurant-details-mask > .container > .restaurant-details > .product-comment {
+  padding-left: 0px;
+}
+@media (min-width: 375px) and (max-width: 1365px) {
+  #product-restaurant {
+    margin-bottom: 50px;
+  }
+  .restaurant-details {
+    display: none;
+  }
+}
+
+/*product-restaurent page-bar start*/
+.page-bar {
+  padding-left: 215px;
+  margin-bottom: 50px;
+}
+.page-bar > .container {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+}
+.page-bar > .container > ul {
+  display: flex;
+  max-width: 600px;
+  margin: auto;
+  justify-content: space-around;
+}
+.page-bar > .container > ul li {
+  margin-left: 32px;
+  background-color: rgb(255, 255, 255);
+}
+.page-bar > .container > ul li a {
+  color: black;
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .page-bar {
+    padding-left: 0px;
+  }
+  .page-bar > .container {
+    flex-direction: column;
+  }
+  .product-search-total {
+    margin-bottom: 40px;
+  }
+  .page-bar > .container > ul li {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .page-bar {
+    padding-left: 0px;
+  }
+  .page-bar > .container {
+    flex-direction: column;
+  }
+  .product-search-total {
+    margin-bottom: 40px;
+  }
+  .page-bar > .container > ul li {
+    margin-left: 20px;
+  }
+}
+/*login start*/
+.bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+.login-contet {
+  display: none;
+  max-width: 600px;
+  height: 655px;
+  position: fixed;
+  top: 25%;
+  margin-top: -150px;
+  background: #fff;
+  z-index: 3;
+  left: 50%;
+  margin-left: -300px;
+}
+#login {
+  background-color: #fff;
+  margin: 0 auto;
+}
+#login > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.login-logo img {
+  padding-top: 48px;
+  width: 136px;
+}
+.login-title {
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+.login-title h2 {
+  font-size: 24px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  font-family: "Noto Sans TC";
+}
+.login-title h3 {
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  padding-left: 15px;
+}
+.member-registered {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.jp-registered-btn {
+  width: 40%;
+}
+.jp-registered-btn a {
+  border: 2px solid #bcaaa4;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Noto Sans TC";
+  line-height: 30px;
+  color: black;
+  display: block;
+}
+.jp-login-btn {
+  width: 40%;
+  background-color: #bcaaa4;
+  border-radius: 8px;
+}
+.jp-login-btn a {
+  font-family: "Noto Sans TC";
+  border: 2px solid #bcaaa4;
+  border-radius: 20px;
+  border: 2px solid #bcaaa4;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+.remember {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  /* margin-top: 20px; */
+}
+.remember a span {
+  color: black;
+  opacity: 0.4;
+  text-decoration: none;
+  font-family: "Noto Sans TC";
+}
+.community-login {
+  margin-top: 20px;
+}
+.community-login > .container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  max-width: 500px;
+  margin: 0 auto;
+}
+.fb-login>a>img {
+  width: 60%;
+  margin-left: 28%;
+}
+.google-login>a>img {
+  width: 60%;
+  margin-left: 13%;
+}
+.agree-terms {
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 0.2em;
+  opacity: 0.5;
+}
+.agree-terms > h4 {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.agree-terms > h4 > span {
+  font-family: "Lobster";
+}
+.agree-terms > h5 {
+  font-family: "Noto Sans TC", sans-serif;
+}
+/*login end*/
+
+/*member start*/
+.member {
+  padding-top: 75px;
+}
+.member > .container {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+}
+.member-personal-info p {
+  font-family: "Noto Sans TC";
+  font-size: 15px;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.member-mug-shot img {
+  width: 150px;
+  padding-bottom: 20px;
+}
+
+.member-personal-title {
+  display: flex;
+}
+.member-personal-title > h2 {
+  font-family: "Noto Sans TC";
+  font-size: 30px;
+  font-weight: bold;
+  padding: 25px;
+}
+.member-personal-info button {
+  font-family: "Noto Sans TC";
+  font-size: 15px;
+  margin-top: 25px;
+}
+.member-personal-info button a {
+  color: black;
+  text-decoration: none;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .member {
+    padding-top: 0px;
+  }
+  .member-mug-shot img {
+    width: 80px;
+    padding-left: 10px;
+  }
+  .member-personal-title > h2 {
+    font-size: 20px;
+  }
+  .member-personal-info button {
+    font-size: 10px;
+  }
+  .member-personal-info p {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .member-mug-shot img {
+    width: 80px;
+    padding-left: 10px;
+  }
+  .member-personal-title > h2 {
+    font-size: 20px;
+  }
+  .member-personal-info button {
+    font-size: 10px;
+  }
+  .member-personal-info p {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+}
+/*收藏頁面start*/
+.collect > .container {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+}
+.collect > .container button {
+  background-color: #fff;
+  border-radius: 6px;
+  width: 100px;
+  height: 35px;
+}
+.collect-set > button > a {
+  font-family: "Noto Sans TC";
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+.collect-all {
+  margin-top: 12px;
+  margin-left: 30px;
+}
+.collect-all > a {
+  font-family: "Noto Sans TC";
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  opacity: 0.7;
+  font-size: 14px;
+}
+.collect-box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.collect-box > .container {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+  justify-content: flex-start;
+}
+.collect-box-1,
+.collect-box-2,
+.collect-box-3,
+.collect-box-4,
+.collect-box-5 {
+  margin-right: 40px;
+}
+.collect-box-1 td {
+  width: 190px;
+  border-right: 5px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.collect-box-1 td a img {
+  width: 100%;
+}
+.collect-box-2 td {
+  width: 190px;
+  border-right: 5px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.collect-box-2 td a img {
+  width: 100%;
+}
+.collect-box-3 td {
+  width: 190px;
+  border-right: 5px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.collect-box-3 td a img {
+  width: 100%;
+}
+.collect-box-4 td {
+  width: 190px;
+  border-right: 5px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.collect-box-4 td a img {
+  width: 100%;
+}
+.collect-box-5 {
+  background-color: #bcaaa4;
+}
+.collect-box-5 td {
+  width: 190px;
+  border-right: 5px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.collect-box-5 td a img {
+  width: 100%;
+}
+.collect-title a {
+  display: block;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Noto Sans TC";
+  padding-right: 10px;
+  padding-top: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .collect > .container button {
+    width: 80px;
+  }
+  .collect > .container {
+    padding-top: 15px;
+  }
+  .collect-box > .container {
+    flex-direction: column;
+  }
+  .collect-box-1,
+  .collect-box-2,
+  .collect-box-3,
+  .collect-box-4,
+  .collect-box-5 {
+    margin-right: 0px;
+  }
+  .collect-box-1 td,
+  .collect-box-2 td,
+  .collect-box-3 td,
+  .collect-box-4 td,
+  .collect-box-5 td {
+    width: 50%;
+  }
+  .collect-title a {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .collect-box {
+    padding-left: 25px;
+  }
+  .collect-title a {
+    font-size: 14px;
+    padding-right: 25px;
+  }
+}
+/* 全部收藏頁面*/
+.collect-all-page {
+  margin-left: 30px;
+}
+.collect-all-page a {
+  font-family: "Noto Sans TC";
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+.collect-set-page {
+  margin-top: 12px;
+}
+.collect-set-page a {
+  font-family: "Noto Sans TC";
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  opacity: 0.7;
+  font-size: 14px;
+}
+.collect-all-page-box {
+  padding-bottom: 50px;
+}
+.collect-all-page-box > .container {
+  max-width: 1140px;
+  margin: auto;
+}
+.collect-all-page-box > .container > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.collect-all-page-box > .container > ul li {
+  width: 185px;
+  height: 175px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  background-color: #bcaaa4;
+}
+.collect-all-page-box > .container > ul li a img {
+  width: 100%;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .collect > .container {
+    padding-left: 20px;
+  }
+
+  .collect-all-page-box > .container > ul {
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .collect-all-page-box > .container > ul > li {
+    width: 40%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .collect > .container {
+    padding-left: 25px;
+  }
+  .collect-all-page-box > .container > ul {
+    display: flex;
+  }
+  .collect-all-page-box > .container > ul > li {
+    width: 20%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1124px) {
+  .collect > .container {
+    padding-left: 25px;
+  }
+  .collect-all-page-box > .container > ul {
+    display: flex;
+  }
+  .collect-all-page-box > .container > ul > li {
+    width: 28%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+}
+/*會員編輯頁*/
+.member-edit {
+  padding-bottom: 150px;
+}
+.member-edit > .container {
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+}
+.personal-file {
+  padding-bottom: 32px;
+}
+.personal-file a {
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Noto Sans TC";
+}
+.change-password a {
+  font-size: 20px;
+  color: #757575;
+  text-decoration: none;
+  font-family: "Noto Sans TC";
+}
+.section1 {
+  padding-left: 80px;
+}
+.member-edit-headsticker {
+  display: flex;
+  padding-left: 25px;
+}
+.member-edit-headsticker img {
+  width: 70px;
+  padding-right: 32px;
+}
+.member-edit-headsticker-title {
+  border: 1px solid #bcaaa4;
+  border-radius: 10px;
+  width: 88px;
+}
+.member-edit-headsticker-title a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  line-height: 32px;
+  font-family: "Noto Sans TC";
+}
+.member-headsticker-name {
+  width: 88px;
+  line-height: 32px;
+}
+.member-headsticker-name span {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+.section2 {
+  font-weight: bold;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  font-family: "Noto Sans TC";
+}
+.section2 input {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 28px;
+  width: 264px;
+  height: 30px;
+  border-radius: 5px;
+}
+.introduction {
+  display: flex;
+  padding-top: 20px;
+}
+.introduction textarea {
+  margin-left: 28px;
+  border-radius: 5px;
+  font-family: "Noto Sans TC";
+}
+.section3 {
+  font-weight: bold;
+}
+.section3 input {
+  width: 264px;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-bottom: 28px;
+  height: 30px;
+  border-radius: 5px;
+}
+.section4 {
+  margin-left: 30px;
+  font-weight: bold;
+}
+.section4 input {
+  font-size: 12px;
+  margin-left: 28px;
+}
+.section4 ul li {
+  padding-top: 10px;
+}
+.ch-password {
+  width: 88px;
+  margin-left: 62px;
+}
+.ch-password a {
+  display: block;
+  border: 1px solid #bcaaa4;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+  font-family: "Noto Sans TC";
+}
+.forget-password {
+  width: 88px;
+  margin-left: 62px;
+}
+.forget-password a {
+  display: block;
+  border-radius: 5px;
+  color: #000;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+  font-family: "Noto Sans TC";
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .member-edit > .container {
+    flex-direction: column;
+  }
+  .member-edit > .container > ul {
+    display: flex;
+  }
+  .personal-file {
+    padding-left: 70px;
+  }
+  .change-password {
+    padding-left: 25px;
+  }
+  .member-edit > .container > ul li a {
+    font-size: 14px;
+  }
+  .section1 {
+    padding-left: 0px;
+  }
+  .section2 {
+    padding-left: 15px;
+  }
+  .section2 input {
+    width: 50%;
+  }
+  .introduction textarea {
+    width: 68%;
+  }
+  .section3 {
+    padding-left: 15px;
+  }
+  .section3 input {
+    width: 50%;
+  }
+  .ch-password {
+    margin-left: 82px;
+  }
+  .forget-password {
+    margin-left: 82px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .member-edit > .container > ul {
+    padding-left: 25px;
+  }
+}
+/*關於我們*/
+.about {
+  padding-top: 80px;
+}
+.about > .container {
+  max-width: 1140px;
+  margin: auto;
+}
+.about > .container ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.about-img1 {
+  width: 40%;
+}
+.about-img1 img {
+  width: 100%;
+}
+.about-artical {
+  width: 45%;
+}
+.about-artical-title {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Noto Sans TC";
+  margin-bottom: 20px;
+  margin: 64px;
+}
+.about-artical-title h2 {
+  margin-bottom: 20px;
+}
+.about-artical-content p {
+  font-family: "Noto Sans TC";
+  font-size: 16px;
+  padding-top: 10px;
+}
+@media (min-width: 375px) and (max-width: 500px) {
+  .about > .container ul li {
+    flex-direction: column;
+  }
+  .about-artical {
+    width: 100%;
+  }
+  .about-artical img {
+    width: 100%;
+  }
+}

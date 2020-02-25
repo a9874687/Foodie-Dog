@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-master/package/css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css-master/animate.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/chinese.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script src="js/WOW-master/dist/wow.min.js"></script>
+    <script src="js/swiper-master/src/swiper.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/index_style.js"></script>
+    <title>Foodie Dog</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container ">
+            <div class="top-logo">
+                <a href="index.html">
+                    <img src="img/Logo.png" alt="">
+                </a>
+            </div>
+            <a href="#" class="showmenu">
+                <img src="img/hamburger-menu.png" alt="">
+            </a>
+            <ul>
+                <li><a href="about.html">關於我們</a></li>
+                <li class="login-btn"><a href="javascript:void(0)">登入</a></li>
+            </ul>
+            <div class="bg"></div>
+            <div class="login-contet">
+                <div id="login">
+                    <div class="container">
+                        <div class="login-logo">
+                            <img src="img/Logo.png" alt="">
+                        </div>
+                        <div class="login-title">
+                            <h2>歡迎來到美食狗!</h2>
+                            <h3>你, 就是下一個美食家</h3>
+                        </div>
+                        <form>
+                            <input type="email" name="emailaddress" placeholder="電郵地址"
+                                style="width: 100%; height:40px; border-radius: 30px;font-size: 12px;padding-left: 30px;margin-bottom: 24px;border:1px solid #9e9e9e ">
+                            <input type="password" name="memberpassword" id="" placeholder="密碼"
+                                style="width: 100%; height:40px; border-radius: 30px;font-size: 12px;padding-left: 30px;border:1px solid #9e9e9e ">
+                            <div class="member-registered">
+                                <div class="jp-registered-btn">
+                                    <a href="">註冊</a>
+                                </div>
+                                <div class="jp-login-btn">
+                                    <a href="member-index.html">登入</a>
+                                </div>
+                            </div>
+                            <div class="remember">
+                                <div>
+                                    <input type="checkbox" name="remember" value="remember-me">記住我
+                                </div>
+                                <a href="">
+                                    <span>忘記密碼?</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                    <hr style="width: 400px;opacity: 0.5;">
+                    <div class="community-login">
+                        <div class="container">
+                            <div class="fb-login">
+                                <a href="">
+                                    <img src="img/product/icon/Facebook.png" alt="">
+                                </a>
+                            </div>
+                            <div class="google-login">
+                                <a href="">
+                                    <img src="img/product/icon/Google.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="agree-terms">
+                            <h4>當您使用
+                                <span>Foodie Dog </span>
+                                代表您同意我們的
+                            </h4>
+                            <br>
+                            <h5>服務條款 與 隱私權政策</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="search">
+        <div class="container">
+            <div class="search-bar">
+                <div class="search-title wow bounceInDown" data-wow-duration="1s" data-wow-delay="0s">
+                    早安!
+                    <img src="img/smile.png" alt="">
+                    <br>
+                    <span>今天想吃什麼?</span>
+                </div>
+                <div class="search-btn wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                    <input type="text" placeholder="">
+                    <a href="">
+                        <img src="img/search.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+            <div class="topmenu-img">
+                <img src="img/Rice.png" alt="">
+                <img src="img/Chopstick.png" alt="">
+            </div>
+
+        </div>
+        <!-- Swiper JS -->
+        <script src="js/swiper-master/package/js/swiper.min.js"></script>
+
+        <div id="food-restaurant">
+            <div class="container">
+                <div class="food-restaurant-title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                    近期熱門
+                    <span class="lobster">
+                        Hot
+                        <img src="img/fire.png" alt="">
+                    </span>
+                </div>
+                <ul class="food-restaurant-card wow zoomIn" data-wow-duration="1s" data-wow-delay="1.5s">
+                    <li>
+                        <a href="">
+                            <div class="box">
+                                <div class="box-title">Circle Pasta</div>
+                            </div>
+                            <img src="img/熱門餐廳/Circle Pasta/Circle Pasta.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="box-title">Le NINI</div>
+                        </div>
+                        <a href="">
+                            <img src="img/熱門餐廳/Le NINI/Le NINI.JPG" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="box-title">Thai.J</div>
+                        </div>
+                        <a href="">
+                            <img src="img/熱門餐廳/Thai.J/Thai.J.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="box-title">吃光食堂</div>
+                        </div>
+                        <a href="">
+                            <img src="img/熱門餐廳/吃光食堂/吃光食堂.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="box-title">屋馬</div>
+                        </div>
+                        <a href="">
+                            <img src="img/熱門餐廳/屋馬/屋馬.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="box-title">憲賣咖啡</div>
+                        </div>
+                        <a href="">
+                            <img src="img/熱門餐廳/憲賣咖啡/憲賣咖啡.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="box-title">木門咖啡</div>
+                        </div>
+                        <a href="">
+                            <img src="img//熱門餐廳/木門咖啡/木門咖啡.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="box-title">鵝房宮</div>
+                        </div>
+                        <a href="">
+                            <img src="img/熱門餐廳/鵝房宮/鵝房宮.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="food-type">
+                <div class="container">
+                    <div class="food-type-title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                        探索美食
+                        <span class="lobster">Explore</span>
+                    </div>
+                    <ul class="food-type-card-list1 wow fadeIn" data-wow-duration="3S" data-wow-delay="1s">
+                        <li>
+                            <div class="box">
+                                <div class="box-title">咖啡廳與茶</div>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="img/探索美食/coffee-restaurant.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">早午餐</div>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="img/探索美食/lunchfood.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">健康飲食</div>
+                            </div>
+                            <a href="product.html">
+                                <img src="img/探索美食/healtyh-food.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">甜點</div>
+                            </div>
+                            <a href="">
+                                <img src="img/探索美食/dessert-food.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">小吃店</div>
+                            </div>
+                            <a href="">
+                                <img src="img/探索美食/snack-food.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">果汁奶昔</div>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="img/barbecue.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">披薩</div>
+                            </div>
+                            <a href="">
+                                <img src="img/barbecue.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">火鍋</div>
+                            </div>
+                            <a href="product.html">
+                                <img src="img/product/hotpot4.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="food-type-card-list2 wow fadeIn" data-wow-duration="3S" data-wow-delay="1s">
+                        <li>
+                            <div class="box">
+                                <div class="box-title">中式料理</div>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="img/探索美食/chinese.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">日式料理</div>
+                            </div>
+                            <a href="">
+                                <img src="img/探索美食/japan.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">韓式料理</div>
+                            </div>
+                            <a href="">
+                                <img src="img/探索美食/KOREN.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">泰式料理</div>
+                            </div>
+                            <a href="">
+                                <img src="img/探索美食/tai_food.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">美式料理</div>
+                            </div>
+                            <a href="">
+                                <img src="img/探索美食/american.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">義式料理</div>
+                            </div>
+                            <a href="">
+                                <img src="img/探索美食/Italyfood.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">印度料理</div>
+                            </div>
+                            <a href="">
+                                <img src="img/探索美食/india-food.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="box-title">素食</div>
+                            </div>
+                            <a href="">
+                                <img src="img/探索美食/Vegetarian food.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="say ">
+                        <h3 class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">一生沒有宴飲，就像一條長路沒有旅店一樣。</h3>
+                        <br>
+                        <span class="wow fadeIn" data-wow-duration="3s" data-wow-delay="1.5s">一德溪克利特 (古希臘哲學家)</span>
+                    </div>
+                    <div class="corner-banner wow rollIn data-wow-duration =20s data-wow-delay =20s">
+                        <img src="img/Coffee.png" alt="">
+                    </div>
+                </div>
+
+                <div class="slide-left-banner wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s">
+                    <img src="img/Dumplin.png" alt="">
+                </div>
+                <div class="slide-right-banner wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.5s">
+                    <img src="img/Sushi.png" alt="">
+                </div>
+            </div>
+            <div id="footer">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <h1 class="food-type-card wow jackInTheBox" data-wow-duration="1.5s"
+                                    data-wow-delay="2s">
+                                    Foodie Dog
+                                </h1>
+
+                                <span>Copyright ©fooddog 2020</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">連結</a>
+                            <a href="">聯絡我們</a>
+                            <a href="">服務條款</a>
+                            <a href="">隱私政策</a>
+                        </li>
+                        <li>
+                            <a href="">社群</a>
+                            <a href="">粉絲專業</a>
+                            <a href="">Facebook</a>
+                            <a href="">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="">Apps</a>
+                            <a href="">Appstore</a>
+                            <a href="">Google play</a>
+                        </li>
+                        <li class="copyright">
+                            <span>Copyright ©fooddog 2020</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script src="js/jquery-3.4.1.min.js"></script>
+            <script src="js/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+            <script src="js/WOW-master/dist/wow.min.js"></script>
+            <script src="js/index_style.js"></script>
+            <script>
+                new WOW().init();
+
+
+
+                // $('.food-type-card-list1').load('index.html');
+                $('.food-type-card-list1>li').click(function (e) {
+                    // e.preventDefault();
+                    let x = $(this).index();
+                    console.log(x);
+
+                    switch (x) {
+                        case 0:
+                            $('.food-type-card-list1').load("text.html");
+                            break;
+                        case 1:
+                            $('.food-type-card-list1').load("text2.html");
+
+                            break;
+
+                    }
+                });
+
+
+            </script>
+</body>
+
+</html>

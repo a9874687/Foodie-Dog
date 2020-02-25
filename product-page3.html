@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <!-- <script src="js/masonry-master/dist/masonry.pkgd.min.js"></script> -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/index_style.js"></script>
+    <title>Product</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container ">
+            <div class="top-logo">
+                <a href="member-index.html">
+                    <img src="img/Logo.png" alt="">
+                </a>
+            </div>
+            <ul>
+                <li><a href="">關於我們</a></li>
+                <li>
+                    <a href="member.html">
+                        <img src="img/login-member/Mask.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="bg"></div>
+            <div class="login-contet">
+                <div id="login">
+                    <div class="container">
+                        <div class="login-logo">
+                            <img src="img/Logo.png" alt="">
+                        </div>
+                        <div class="login-title">
+                            <h2>歡迎來到美食狗!</h2>
+                            <h3>你, 就是下一個美食家</h3>
+                        </div>
+                        <form>
+                            <input type="email" name="emailaddress"placeholder="電郵地址" style="width: 100%; height:40px; border-radius: 30px;font-size: 12px;padding-left: 30px;margin-bottom: 24px; ">
+                            <input type="password" name="memberpassword" id="" placeholder="密碼" style="width: 100%; height:40px; border-radius: 30px;font-size: 12px;padding-left: 30px; ">
+                            <div class="member-registered">
+                               <div class="jp-registered-btn">
+                                    <a href="">註冊</a>
+                               </div>
+                               <div class="jp-login-btn">
+                                   <a href="member.html">登入</a>
+                               </div>
+                            </div>
+                            <div class="remember">
+                                <div>
+                                    <input type="checkbox" name="remember" value="remember-me">記住我
+                                </div>
+                                <a href="">
+                                    <span>忘記密碼?</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                    <hr style="width: 600px;opacity: 0.5;">
+                    <div class="community-login">
+                        <div class="container">
+                            <div class="fb-login">
+                                
+                                <input type="button" value="facebook" style="color:white;width: 180px; height: 50px; border-radius: 50px;font-size: 20px;padding-left:40px;letter-spacing: 0.1em;">
+                            </div>
+                            <div class="google-login">
+                                <input type="button" value="google" style="color:black;width: 180px; height: 50px; border-radius: 50px;font-size: 25px;padding-left:40px;letter-spacing: 0.1em;">
+                            </div>
+                        </div>
+                        <div class="agree-terms">
+                            <h4>當您使用
+                                <span>Foodie Dog </span>
+                                    代表您同意我們的
+                            </h4>
+                            <br>
+                            <h5>服務條款 與 隱私權政策</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="product-search">
+        <div class="container">
+            <div class="product-search-bar">
+                <input type="text" placeholder="輕井澤">
+                <a href="">
+                    <img src="img/search.png" alt="">
+                </a>
+            </div>
+            <ul class="product-sort">
+                <li class="critic">
+                    <a href="">
+                        評分高低
+                        <img src="img/product/icon/Triangle.png" alt="">
+                    </a>
+                    <ul class="critic-open">
+                        <li>
+                            <a href="">
+                                <span>評分最高</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>評分最低</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="distance">
+                    <a href="">
+                        最佳距離
+                        <img src="img/product/icon/Triangle.png" alt="">
+                    </a>
+                    <ul class="distance-open">
+                        <li>
+                            <a href="">1公里</a>
+                        </li>
+                        <li>
+                            <a href="">2公里</a>
+                        </li>
+                        <li>
+                            <a href="">3公里</a>
+                        </li>
+                        <li>
+                            <a href="">4公里</a>
+                        </li>
+                        <li>
+                            <a href="">5公里</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="consumption">
+                    <a href="">
+                        每人均消
+                        <img src="img/product/icon/Triangle.png" alt="">
+                    </a>
+                    <ul class="consumption-open">
+                        <li>
+                            <a href="">150以內</a>
+                        </li>
+                        <li>
+                            <a href="">150~600</a>
+                        </li>
+                        <li>
+                            <a href="">600~1200</a>
+                        </li>
+                        <li>
+                            <a href="">1200~2000</a>
+                        </li>
+                        <li>
+                            <a href="">2000以上</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <input type="checkbox" id="open-checkbox">
+                    <span>營業中</span>
+                </li>
+            </ul>
+
+
+            <!-- <input type="button" value="評分最高">
+            <input type="button" value="最佳距離">
+            <input type="button" value="每人均消費"> -->
+        </div>
+    </div>
+    <div id="product-restaurant">
+        <div class="container">
+            <div class="product-restaurant-list">
+                <div class="product-info">
+                    <div class="restaurant-photo">
+                        <a href="">
+                            <img src="img/product/hotpot1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-info-content">
+                            <a href="javascript:void(0)">
+                                <h2>無理 WULI</h2>
+                            </a>
+                            <div class="restaurant-details-mask">
+                                <div class="container">
+                                    <div class="restaurant-details">
+                                        <div class="storefront-environment">
+                                            <div id="storefront">
+                                                <img src="img/product/wuli_cover.png" alt="">
+                                            </div>
+                                            <div id="storefront-photo">
+                                                <img src="img/product/wuli_cover.png" alt="">
+                                                <img src="img/product/wuli_1.jpg" alt="">
+                                                <img src="img/product/wuli_2.jpg" alt="">
+                                                <img src="img/product/wuli_3.jpg" alt="">
+                                                <img src="img/product/wuli_4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="storefront-map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14562.530181246235!2d120.6609225!3d24.1495394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa916760e64424135!2z54Sh55CGIFdVTEk!5e0!3m2!1szh-TW!2stw!4v1580803129125!5m2!1szh-TW!2stw"
+                                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                        </div>
+                                        <div class="product-comment">
+                                            <div class="container">
+                                                <div class="write-comment">
+                                                    <span>
+                                                        <a href="javascript:void(0)">撰寫評論</a>
+                                                    </span>
+                                                </div>
+                                                <div class="restaurant-favorite">
+                                                    <span>
+                                                        <a href="">收藏餐廳</a>
+                                                    </span>
+                                                </div>
+                                                <div class="bg"></div>
+                                                <div class="product-comment-content">
+                                                    <div class="product-comment-form">
+                                                        <div class="container">
+                                                            <div class="product-comment-form-name">
+                                                                <span>無理 WULI</span>
+                                                            </div>
+                                                            <div class="product-comment-form-member">
+                                                                <img src="img/login-member/Mask.png" alt="">
+                                                                <div class="product-comment-form-member-name">
+                                                                    <h3>巨石強森</h3>
+                                                                    <h4>公開發布</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-comment-form-star">
+                                                                <img src="img/product/Path white.png" alt="">
+                                                                <img src="img/product/Path white.png" alt="">
+                                                                <img src="img/product/Path white.png" alt="">
+                                                                <img src="img/product/Path white.png" alt="">
+                                                                <img src="img/product/Path white.png" alt="">
+                                                            </div>
+                                                            <div class="text-ident">
+                                                                <textarea  cols="30" rows="5" placeholder="詳細說明你在這個餐廳的親身體驗"></textarea>
+                                                            </div>
+                                                            <div class="determine">
+                                                                <div class="cancel">
+                                                                    <a href="">取消</a>
+                                                                </div>
+                                                                <div class="release">
+                                                                    <a href="">發佈</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="comment">
+                                                <div class="container">
+                                                    <div class="comment-list">
+                                                        <ul>
+                                                            <li class="avatar">
+                                                                <img src="img/product/comment/Oval.png" alt="">
+                                                            </li>
+                                                            <li class="avatar-info">
+                                                                <h3>安海瑟薇</h3>
+                                                                <br>
+                                                                <span>4.0</span>
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path white.png" alt="">
+                                                            </li>
+                                                        </ul>
+                                                        <p>網美系韓式鍋物餐廳, 夢幻的 Tiffany 藍設計, 還有可愛的盪鞦韆</p>
+                                                    </div>
+                                                    <div class="comment-list">
+                                                        <ul>
+                                                            <li class="avatar">
+                                                                <img src="img/product/comment/Oval_2.png" alt="">
+                                                            </li>
+                                                            <li class="avatar-info">
+                                                                <h3>瑪格羅比</h3>
+                                                                <br>
+                                                                <span>4.2</span>
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path white.png" alt="">
+                                                            </li>
+                                                        </ul>
+                                                        <p>網美系韓式鍋物餐廳, 夢幻的 Tiffany 藍設計, 還有可愛的盪鞦韆，<br><br>
+                                                            開店前就一波排隊人潮! 藍色系外觀加上門口長鞦韆超級夢幻的~</p>
+                                                    </div>
+                                                    <div class="comment-list">
+                                                        <ul>
+                                                            <li class="avatar">
+                                                                <img src="img/product/comment/Oval_3.png" alt="">
+                                                            </li>
+                                                            <li class="avatar-info">
+                                                                <h3>巨石強森</h3>
+                                                                <br>
+                                                                <span>4.6</span>
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path.png" alt="">
+                                                                <img src="img/product/Path white.png" alt="">
+                                                            </li>
+                                                        </ul>
+                                                        <p>夢幻的 Tiffany 藍裝潢加上兩樓高的鞦韆設計,隱藏在巷弄的<br><br>
+                                                            網美韓式料理</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <span>
+                                <span class="star">
+                                    4.0
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path white.png" alt="">
+                                    <span class="rate">(3則評論)</span>
+                                </span>
+                            </span>
+                            <br><br>
+                            <span class="time">
+                                <img src="img/product/icon/time.png" alt="">
+                                <span>11:30-15:30| 17:00-21:00</span>
+                            </span>
+                            <br><br>
+                            <span class="location">
+                                <img src="img/product/icon/location.png" alt="">
+                                <span>台中市西區公正路156巷4號</span>
+                            </span>
+                            <br><br>
+                            <span class="phone">
+                                <img src="img/product/icon/phone.png" alt="">
+                                <span>04-23010123</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: 100%;color: black;border-style:solid;opacity: 0.1;">
+
+                <div class="product-info">
+                    <div class="restaurant-photo">
+                        <a href="">
+                            <img src="img/product/hotpot2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-info-content">
+                            <a href="">
+                                <h2>輕井澤</h2>
+                            </a>
+                            <br>
+                            <span>
+                                <span class="star">
+                                    4.3
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path white.png" alt="">
+                                    <span class="rate">(30則評論)</span>
+                                </span>
+                            </span>
+                            <br><br>
+                            <span class="time">
+                                <img src="img/product/icon/time.png" alt="">
+                                <span>00:00-01:00| 11:00-00:00</span>
+                            </span>
+                            <br><br>
+                            <span class="location">
+                                <img src="img/product/icon/location.png" alt="">
+                                <span>台中市西區公益路276號</span>
+                            </span>
+                            <br><br>
+                            <span class="phone">
+                                <img src="img/product/icon/phone.png" alt="">
+                                <span>04-23274747</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: 100%;color: black;border-style:solid;opacity: 0.1;">
+
+
+                <div class="product-info">
+                    <div class="restaurant-photo">
+                        <a href="">
+                            <img src="img/product/hotpot3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-info-content">
+                            <a href="">
+                                <h2>丹閎鍋</h2>
+                            </a>
+                            <br>
+                            <span>
+                                <span class="star">
+                                    4.3
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path white.png" alt="">
+                                    <span class="rate">(6則評論)</span>
+                                </span>
+                            </span>
+                            <br><br>
+                            <span class="time">
+                                <img src="img/product/icon/time.png" alt="">
+                                <span>00:00-02:00| 17:00-00:00</span>
+                            </span>
+                            <br><br>
+                            <span class="location">
+                                <img src="img/product/icon/location.png" alt="">
+                                <span>台中市西區忠明南路46號</span>
+                            </span>
+                            <br><br>
+                            <span class="phone">
+                                <img src="img/product/icon/phone.png" alt="">
+                                <span>04-23261125</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: 100%;color: black;border-style:solid;opacity: 0.1;">
+
+
+
+                <div class="product-info">
+                    <div class="restaurant-photo">
+                        <a href="">
+                            <img src="img/product/hotpot4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-info-content">
+                            <a href="">
+                                <h2>瀧厚鍋物</h2>
+                            </a>
+                            <br>
+                            <span>
+                                <span class="star">
+                                    4.3
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path white.png" alt="">
+                                    <span class="rate">(7則評論)</span>
+                                </span>
+                            </span>
+                            <br><br>
+                            <span class="time">
+                                <img src="img/product/icon/time.png" alt="">
+                                <span>11:30-14:30| 17:00-22:00</span>
+                            </span>
+                            <br><br>
+                            <span class="location">
+                                <img src="img/product/icon/location.png" alt="">
+                                <span>台中市西區向上北路137號</span>
+                            </span>
+                            <br><br>
+                            <span class="phone">
+                                <img src="img/product/icon/phone.png" alt="">
+                                <span>04-23029599</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: 100%;color: black;border-style:solid;opacity: 0.1;">
+
+
+                <div class="product-info">
+                    <div class="restaurant-photo">
+                        <a href="">
+                            <img src="img/product/hotpot5.png" alt="">
+                        </a>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-info-content">
+                            <a href="">
+                                <h2>食藝石頭火鍋</h2>
+                            </a>
+                            <br>
+                            <span>
+                                <span class="star">
+                                    4.7
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path white.png" alt="">
+                                    <span class="rate">(33則評論)</span>
+                                </span>
+                            </span>
+                            <br><br>
+                            <span class="time">
+                                <img src="img/product/icon/time.png" alt="">
+                                <span>17:00-23:00</span>
+                            </span>
+                            <br><br>
+                            <span class="location">
+                                <img src="img/product/icon/location.png" alt="">
+                                <span>台中市西區梅川西路二段33號</span>
+                            </span>
+                            <br><br>
+                            <span class="phone">
+                                <img src="img/product/icon/phone.png" alt="">
+                                <span>04-23029599</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: 100%;color: black;border-style:solid;opacity: 0.1;">
+
+
+
+                <div class="product-info">
+                    <div class="restaurant-photo">
+                        <a href="">
+                            <img src="img/product/hotpot6.png" alt="">
+                        </a>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-info-content">
+                            <a href="">
+                                <h2>嗑肉石鍋</h2>
+                            </a>
+                            <br>
+                            <span>
+                                <span class="star">
+                                    4.4
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path.png" alt="">
+                                    <img src="img/product/Path white.png" alt="">
+                                    <span class="rate">
+                                        <a href="">(9則評論)</a>
+                                    </span>
+                                </span>
+                            </span>
+                            <br><br>
+                            <span class="time">
+                                <img src="img/product/icon/time.png" alt="">
+                                <span>00:00-02:00| 17:00-00:00</span>
+                            </span>
+                            <br><br>
+                            <span class="location">
+                                <img src="img/product/icon/location.png" alt="">
+                                <span>台中市西區華美街334號</span>
+                            </span>
+                            <br><br>
+                            <span class="phone">
+                                <img src="img/product/icon/phone.png" alt="">
+                                <span>04-23210068</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: 100%;color: black;border-style:solid;opacity: 0.1;">
+
+
+
+
+
+
+            </div>
+            <div class="restaurant-details">
+                <div class="storefront-environment">
+                    <div id="storefront">
+                        <img src="img/product/chinjin/chinjin1.jpg" alt="">
+                    </div>
+                    <div id="storefront-photo">
+                        <img src="img/product/chinjin/chinjin1.jpg" alt="">
+                        <img src="img/product/chinjin/chinjin2.jpg" alt="">
+                        <img src="img/product/chinjin/chinjin3.jpg" alt="">
+                        <img src="img/product/chinjin/chinjin4.jpg" alt="">
+                        <img src="img/product/chinjin/chinjin5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="storefront-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14564.101191306216!2d120.63803366977542!3d24.135749699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693db6e3a1331d%3A0x12c5dc6a981f9b2a!2z6LyV5LqV5r6kIOaWh-W_g-WNl-S6jOW6lw!5e0!3m2!1szh-TW!2stw!4v1581862430087!5m2!1szh-TW!2stw" width="400" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="product-comment">
+                    <div class="container">
+                        <div class="write-comment">
+                            <span>
+                                <a href="javascript:void(0)">撰寫評論</a>
+                            </span>
+                        </div>
+                        <div class="restaurant-favorite">
+                            <span>
+                                <a href="">收藏餐廳</a>
+                            </span>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="product-comment-content">
+                            <div class="product-comment-form">
+                                <div class="container">
+                                    <div class="product-comment-form-name">
+                                        <span>無理 WULI</span>
+                                    </div>
+                                    <div class="product-comment-form-member">
+                                        <img src="img/login-member/Mask.png" alt="">
+                                        <div class="product-comment-form-member-name">
+                                            <h3>巨石強森</h3>
+                                            <h4>公開發布</h4>
+                                        </div>
+                                    </div>
+                                    <div class="product-comment-form-star">
+                                        <img src="img/product/Path white.png" alt="">
+                                        <img src="img/product/Path white.png" alt="">
+                                        <img src="img/product/Path white.png" alt="">
+                                        <img src="img/product/Path white.png" alt="">
+                                        <img src="img/product/Path white.png" alt="">
+                                    </div>
+                                    <div class="text-ident">
+                                        <textarea  cols="30" rows="5" placeholder="詳細說明你在這個餐廳的親身體驗"></textarea>
+                                    </div>
+                                    <div class="determine">
+                                        <div class="cancel">
+                                            <a href="">取消</a>
+                                        </div>
+                                        <div class="release">
+                                            <a href="">發佈</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="comment">
+                        <div class="container">
+                            <div class="comment-list">
+                                <ul>
+                                    <li class="avatar">
+                                        <img src="img/product/comment/Oval.png" alt="">
+                                    </li>
+                                    <li class="avatar-info">
+                                        <h3>安海瑟薇</h3>
+                                        <br>
+                                        <span>4.0</span>
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path white.png" alt="">
+                                    </li>
+                                </ul>
+                                <p>網美系韓式鍋物餐廳, 夢幻的 Tiffany 藍設計, 還有可愛的盪鞦韆</p>
+                            </div>
+                            <div class="comment-list">
+                                <ul>
+                                    <li class="avatar">
+                                        <img src="img/product/comment/Oval_2.png" alt="">
+                                    </li>
+                                    <li class="avatar-info">
+                                        <h3>瑪格羅比</h3>
+                                        <br>
+                                        <span>4.2</span>
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path white.png" alt="">
+                                    </li>
+                                </ul>
+                                <p>網美系韓式鍋物餐廳, 夢幻的 Tiffany 藍設計, 還有可愛的盪鞦韆，<br><br>
+                                    開店前就一波排隊人潮! 藍色系外觀加上門口長鞦韆超級夢幻的~</p>
+                            </div>
+                            <div class="comment-list">
+                                <ul>
+                                    <li class="avatar">
+                                        <img src="img/product/comment/Oval_3.png" alt="">
+                                    </li>
+                                    <li class="avatar-info">
+                                        <h3>巨石強森</h3>
+                                        <br>
+                                        <span>4.6</span>
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path.png" alt="">
+                                        <img src="img/product/Path white.png" alt="">
+                                    </li>
+                                </ul>
+                                <p>夢幻的 Tiffany 藍裝潢加上兩樓高的鞦韆設計,隱藏在巷弄的<br><br>
+                                    網美韓式料理</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-bar">
+        <div class="container">
+            <div class="product-search-total">
+                <span>共搜尋到59間餐廳</span>
+            </div>
+            <ul>
+                <li>
+                    <a href="">上一頁</a>
+                </li>
+                <li class="second-page">
+                    <a href="">1</a>
+                </li>
+                <li>
+                    <a href="">2</a>
+                </li>
+                <li>
+                    <a href="">3</a>
+                </li>
+                <li>
+                    <a href="">4</a>
+                </li>
+                <li>
+                    <a href="">...</a>
+                </li>
+                <li>
+                    <a href="">12</a>
+                </li>
+                <li>
+                    <a href="">下一頁</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="">
+                        <h1 class="food-type-card wow jackInTheBox" data-wow-duration ="1.5s" data-wow-delay ="2s">
+                            Foodie Dog
+                        </h1>
+                        
+                        <span>Copyright ©fooddog 2020</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">連結</a>
+                    <a href="">聯絡我們</a>
+                    <a href="">服務條款</a>
+                    <a href="">隱私政策</a>
+                </li>
+                <li>
+                    <a href="">社群</a>
+                    <a href="">粉絲專業</a>
+                    <a href="">Facebook</a>
+                    <a href="">Insagram</a>
+                </li>
+                <li>
+                    <a href="">Apps</a>
+                    <a href="">Appstore</a>
+                    <a href="">Google play</a>
+                </li>
+                <li class="copyright">
+                    <span>Copyright ©fooddog 2020</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

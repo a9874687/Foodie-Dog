@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <!----------------------------------header區塊-->
     <div id="header">
         <div class="container ">
             <div class="top-logo">
@@ -36,6 +37,7 @@
                 <li class="login-btn"><a href="javascript:void(0)">登入</a></li>
             </ul>
             <div class="bg"></div>
+        <!----------------------------------登入頁面彈跳視窗-->
             <div class="login-contet">
                 <div id="login">
                     <div class="close">
@@ -101,7 +103,7 @@
             </div>
         </div>
     </div>
-
+    <!----------------------------------搜尋列區塊-->
     <div id="search">
         <div class="container">
             <div class="search-bar">
@@ -125,8 +127,7 @@
             </div>
 
         </div>
-        <script src="js/swiper-master/package/js/swiper.min.js"></script>
-
+        <!----------------------------------近期熱門區塊-->
         <div id="food-restaurant">
             <div class="container">
                 <div class="food-restaurant-title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
@@ -203,6 +204,7 @@
                     </li>
                 </ul>
             </div>
+            <!----------------------------------探索美食區塊-->
             <div id="food-type">
                 <div class="container">
                     <div class="food-type-title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -346,11 +348,12 @@
                         <br>
                         <span class="wow fadeIn" data-wow-duration="3s" data-wow-delay="1.5s">一德溪克利特 (古希臘哲學家)</span>
                     </div>
+                    <!----------------------------------corner-img-->
                     <div class="corner-banner wow rollIn data-wow-duration =20s data-wow-delay =20s">
                         <img src="img/Coffee.png" alt="">
                     </div>
                 </div>
-
+                <!----------------------------------slide-img-->
                 <div class="slide-left-banner wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s">
                     <img src="img/Dumplin.png" alt="">
                 </div>
@@ -358,6 +361,7 @@
                     <img src="img/Sushi.png" alt="">
                 </div>
             </div>
+            <!----------------------------------footer區塊-->
             <div id="footer">
                 <div class="container">
                     <ul>
@@ -400,28 +404,6 @@
             <script src="js/index_style.js"></script>
             <script>
                 new WOW().init();
-
-
-
-                // $('.food-type-card-list1').load('index.html');
-                $('.food-type-card-list1>li').click(function (e) {
-                    // e.preventDefault();
-                    let x = $(this).index();
-                    console.log(x);
-
-                    switch (x) {
-                        case 0:
-                            $('.food-type-card-list1').load("text.html");
-                            break;
-                        case 1:
-                            $('.food-type-card-list1').load("text2.html");
-
-                            break;
-
-                    }
-                });
-
-
             </script>
 </body>
 

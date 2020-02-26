@@ -29,6 +29,10 @@
   font-family: "Noto Sans TC";
   
 }
+.showmenu{
+  display: block;
+  overflow: hidden;
+}
 .showmenu img{
   display: none;
   width: 30px;
@@ -50,6 +54,7 @@
   #header > .container > ul{
     display: flex;
     flex-direction: column;
+    
   }
   #header > .container > ul li {
     display: none;
@@ -65,7 +70,7 @@
     padding-left: 10px;
   }
   #header > .container > ul > li {
-    padding-right: 20px;
+    padding-right: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -819,6 +824,30 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+@media (min-width: 320px) and (max-width: 374px){
+  #product-search > .container{
+    flex-direction: column;
+    padding-bottom:50px;
+  }
+  #product-search > .container > .product-search-bar > input {
+    margin-left: 18px;
+    width: 90%;
+  }
+  .product-search-bar {
+    margin-bottom: 20px;
+  }
+  .product-search-bar a img {
+    top: 0%;
+    left: 85%;
+  }
+  .product-sort {
+    flex-direction: column;
+  }
+  .product-sort li {
+    margin-bottom: 20px;
+    width: 90%;
+  }
+}
 @media (min-width: 375px) and (max-width: 413px) {
   #product-search > .container {
     flex-direction: column;
@@ -843,21 +872,21 @@
     width: 90%;
   }
 }
-@media (min-width: 414px) and (max-width: 767px) {
+@media (min-width: 414px) and (max-width: 555px) {
   #product-search > .container {
     flex-direction: column;
     padding-bottom: 50px;
   }
   #product-search > .container > .product-search-bar > input {
     margin-left: 18px;
-    
+    width: 90%;
   }
   .product-search-bar {
     margin-bottom: 20px;
   }
   .product-search-bar a img {
     top: 0%;
-    left: 80%;
+    left: 85%;
   }
   .product-sort {
     flex-direction: column;
@@ -867,15 +896,16 @@
     width: 90%;
   }
 }
-@media (min-width: 768px) and (max-width: 1365px) {
+@media (min-width: 555px) and (max-width: 1150px) {
   #product-search > .container {
     flex-direction: column;
   }
   .product-search-bar {
     margin-bottom: 40px;
+    margin-left: 10px;
   }
   .product-sort {
-    margin-left: 70px;
+    margin-left: 10px;
   }
 }
 /*product-restaurant start*/
@@ -891,12 +921,17 @@
 .product-info {
   display: flex;
   padding-top: 100px;
+  margin-left: 15px;
+  border-bottom: 1px solid gray;
+  
 }
+
 .restaurant-photo a img {
-  width: 150px;
+  width:150px;
 }
 .restaurant-info {
   padding-left: 50px;
+  margin-bottom: 35px;
 }
 .restaurant-info-content a {
   font-family: "Noto Sans TC";
@@ -953,34 +988,110 @@
   font-size: 16px;
   padding-left: 15px;
 }
-@media (min-width: 375px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 374px) {
+  .product-restaurant-list{
+    flex-basis: calc(100% / 1 - 20px);
+  }
   .product-info {
     flex-direction: column;
+    padding-top: 50px;
+    margin-left: 0px;
   }
   .restaurant-photo a img {
     width: 100%;
     margin-bottom: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
   }
   .restaurant-info-content h2 {
     text-align: center;
   }
 }
-@media (min-width: 768px) and (max-width: 1365px) {
-  .product-restaurant-list {
-    flex-direction: row;
-    flex-wrap: wrap;
+
+@media (min-width: 375px) and (max-width: 650px) {
+  .product-restaurant-list{
+    flex-basis: calc(100% / 1 - 20px);
+  }
+  .product-info {
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 0px;
   }
   .restaurant-photo a img {
     width: 100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .restaurant-info-content h2 {
+    text-align: center;
+  }
+}
+@media (min-width: 651px) and (max-width: 767px) {
+  .product-restaurant-list{
+    flex-basis: calc(100% / 1 - 20px);
+  }
+  .product-info {
+    flex-direction: row;
+    padding-top: 50px;
+    margin-left: 0px;
+  }
+  .restaurant-info {
+    margin-top: 50px;
+  }
+  .restaurant-photo a img {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .restaurant-info-content h2 {
+    text-align: center;
+  }
+ 
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .product-restaurant-list{
+    flex-basis: calc(100% / 1 - 20px);
+  }
+  .restaurant-photo a img {
+    width: 100%;
+    margin-bottom: 40px;
     margin-left: 40px;
   }
   .restaurant-info {
     margin-left: 50px;
     margin-top: 50px;
   }
+  .restaurant-info-content a{
+    font-size: 30px;
+  }
+  .restaurant-info-content span{
+    font-size: 18px;
+    line-height: 2;
+  }
 }
+@media (min-width: 992px) and (max-width: 1180px) {
+  .product-restaurant-list{
+    flex-basis: calc(100% / 1 - 20px);
+  }
+  .restaurant-photo a img {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 40px;
+  }
+  .restaurant-info{
+    margin-left: 100px;
+    
+  }
+  .restaurant-info-content a{
+    font-size: 40px;
+  }
+  .restaurant-info-content span{
+    font-size: 30px;
+    line-height: 2;
+  }
+}
+
 .restaurant-details {
   display: flex;
   flex-direction: column;
@@ -1180,53 +1291,8 @@
   letter-spacing: 0.1em;
   font-family: "Noto Sans TC";
 }
-/* restaurant mask*/
-.restaurant-details-mask {
-  display: none;
-  max-width: 600px;
-  height: 100%;
-  position: fixed;
-  top: 20%;
-  margin-top: -150px;
-  background: #fff;
-  z-index: 3;
-  left: 50%;
-  margin-left: -300px;
-  overflow-y: auto;
-  position: fixed;
-}
-.restaurant-details-mask
-  > .container
-  > .restaurant-details
-  > .storefront-environment {
-  padding-left: 0px;
-  margin-bottom: 20px;
-}
-.restaurant-details-mask
-  > .container
-  > .restaurant-details
-  > .storefront-environment
-  > #storefront
-  > img {
-  width: 600px;
-  margin-bottom: 20px;
-}
-.restaurant-details-mask
-  > .container
-  > .restaurant-details
-  > .storefront-environment
-  > #storefront-photo
-  > img {
-  width: 110px;
-}
-.restaurant-details-mask > .container > .restaurant-details > .storefront-map {
-  padding-left: 0px;
-  width: 100%;
-}
-.restaurant-details-mask > .container > .restaurant-details > .product-comment {
-  padding-left: 0px;
-}
-@media (min-width: 375px) and (max-width: 1365px) {
+
+@media (min-width: 320px) and (max-width: 1180px) {
   #product-restaurant {
     margin-bottom: 50px;
   }
@@ -1260,6 +1326,20 @@
   display: block;
   font-size: 18px;
   text-decoration: none;
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .page-bar {
+    padding-left: 0px;
+  }
+  .page-bar > .container {
+    flex-direction: column;
+  }
+  .product-search-total {
+    margin-bottom: 40px;
+  }
+  .page-bar > .container > ul li {
+    margin-left: 15px;
+  }
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .page-bar {
@@ -1327,11 +1407,10 @@
 }
 
 .login-logo img {
-  padding-top: 48px;
   width: 136px;
 }
 .login-title {
-  margin-top: 48px;
+  margin-top: 18px;
   margin-bottom: 32px;
 }
 .login-title h2 {
@@ -1430,6 +1509,102 @@
 .agree-terms > h5 {
   font-family: "Noto Sans TC", sans-serif;
 }
+@media (min-width: 320px) and (max-width: 374px){
+  .login-contet {
+    max-width: 100%;
+    height: 655px;
+    position: fixed;
+    top: 150px;
+    background: #fff;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: -150px;
+  }
+  .close{
+    position: absolute;
+    top:0;
+    right: 0;
+  }
+  .login-title{
+    margin-top: 10px;
+  }
+}
+@media (min-width: 375px) and (max-width: 413px){
+  .login-contet {
+    max-width: 655px;
+    height: 655px;
+    position: fixed;
+    top: 155px;
+    background: #fff;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: -145px;
+  }
+  .login-title{
+    margin-top: 10px;
+  }
+}
+@media (min-width: 414px) and (max-width: 500px){
+  .login-contet {
+    max-width: 655px;
+    height: 655px;
+    position: fixed;
+    top: 210px;
+    background: #fff;
+    z-index: 3;
+    left: 5%;
+    right: 5%;
+    border-radius: 10px;
+    margin-left: 0px;
+    
+  }
+  .login-title{
+    margin-top: 10px;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px){
+  .login-contet {
+    max-width: 655px;
+    height: 655px;
+    position: fixed;
+    top: 18%;
+    background: #fff;
+    z-index: 3;
+    left: 5%;
+    right: 5%;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: -150px;
+  }
+  .login-title{
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .login-contet {
+    max-width: 655px;
+    height: 655px;
+    position: fixed;
+    top: 18%;
+    background: #fff;
+    z-index: 3;
+    left: 15%;
+    right: 15%;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: -150px;
+  }
+  .login-title{
+    margin-top: 10px;
+  }
+}
+
 /*login end*/
 
 /*member start*/

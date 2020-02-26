@@ -2,12 +2,12 @@ $(document).ready(function () {
   //-------------------手機漢堡選單
   $(".showmenu").click(function () {
     if($(window).width()<= 374){ 
-      $("#header > .container > ul>li").slideToggle();
+      $("#header > .container > ul li").slideToggle();
     };
   });
   //--------------------登入彈跳視窗關閉按鈕
   $(".close").click(function () {
-    $("#header>.container ul li").slideToggle();
+    $(".login-contet").hide();
   });
 
 //--------------------評分高低下拉式選單

@@ -2,7 +2,7 @@ $(document).ready(function () {
   //-------------------手機漢堡選單
   $(".showmenu").click(function () {
     if($(window).width()<= 374){ 
-      $(".login-content").close();
+      $("#header > .container > ul>li").slideToggle();
     };
   });
   //--------------------登入彈跳視窗關閉按鈕

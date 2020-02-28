@@ -84,22 +84,22 @@ $('.product-info').click(function () {
   
   switch (x) {
       case 0:
-          $('.restaurant-details').load("../ajax/product-search-list1.html");
+          $('.restaurant-details').load("ajax/product-search-list1.html");
           break;
       case 1:
-          $('.restaurant-details').load("../ajax/product-search-list2.html");
+          $('.restaurant-details').load("ajax/product-search-list2.html");
           break;
       case 2:
-          $('.restaurant-details').load("../ajax/product-search-list3.html");
+          $('.restaurant-details').load("ajax/product-search-list3.html");
             break;
       case 3:
-          $('.restaurant-details').load("../ajax/product-search-list4.html");
+          $('.restaurant-details').load("ajax/product-search-list4.html");
             break;
       case 4:
-          $('.restaurant-details').load("../ajax/product-search-list5.html");
+          $('.restaurant-details').load("ajax/product-search-list5.html");
             break;
       case 5:
-          $('.restaurant-details').load("../ajax/product-search-list6.html");
+          $('.restaurant-details').load("ajax/product-search-list6.html");
             break;
        }
   });

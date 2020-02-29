@@ -759,6 +759,7 @@
 .distance a {
   letter-spacing: 0.2em;
   text-decoration: none;
+  font-family: "Noto Sans TC";
   line-height: 30px;
   display: block;
 }
@@ -794,6 +795,7 @@
   font-size: 10px;
 }
 .consumption a {
+  font-family: "Noto Sans TC";
   letter-spacing: 0.2em;
   text-decoration: none;
   line-height: 30px;
@@ -2220,18 +2222,30 @@
 }
 .inside-page-details>.container>section{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .inside-page-details>.container>section>ul{
   display: flex;
+  position: relative;
 }
 .inside-page-details>.container>section>ul li{
   margin-left: 50px;
 }
 .inside-page-details>.container>section>ul li a img{
+  position: absolute;
+  top:30px;
+  right: -110px;
   width: 100%;
+  height: 100%;
+  box-shadow: 3px 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+.details-list1{
+  width: 400px;
+  height: 600px;
+  background-color: rgb(238, 210, 173);
+  
 }
 .inside-page-comment{
   margin-bottom: 100px;

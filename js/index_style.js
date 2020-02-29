@@ -1,13 +1,26 @@
 $(document).ready(function () {
 
-  //-------------------手機漢堡選單-----------------------------//
+  $(window).resize(function(){
+    if($(window).outerWidth() >768){
+        $("header>.container>.nav").show();
+        $("header>.container>.member-cart>button").hide();
+    }else{
+        $("header>.container>.nav").hide();
+        $("header>.container>.member-cart>button").show();
+        $(".member-cart>button>i").removeClass("fa-times").addClass("fa-bars");
+    }
+}) 
 
-  $("#header>.container> section a img").click(function () {
+  //-------------------手機漢堡選單-----------------------------//
+  $("#header>.container> section a img").on('click', function() {
     if($(window).width()<= 374){ 
-      $("#header > .container > section > ul li").slideToggle();
+      $("#header > .container > section > ul li").fadeToggle(600);
     };
   });
+  
 
+  
+    
   //--------------------登入彈跳視窗關閉按鈕-----------------------------//
 
   $(".close").click(function () {
@@ -50,6 +63,15 @@ $(document).ready(function () {
     $("#storefront-photo img").removeClass();
   });
 
+//--------------------產品內頁滑鼠移入更換大圖-----------------------------//
+
+$('.inside-page-storefront-photo img').hover(function () {
+  $(this).addClass("active");
+  $('.inside-page-storefront img').attr("src", $(this).attr("src"));
+}, function () {
+  $(".inside-page-storefront-photo img").removeClass();
+});
+
 //--------------------登入頁面彈跳視窗-----------------------------//
 
   $(function () {
@@ -75,6 +97,12 @@ $(document).ready(function () {
       $('.product-comment-content').fadeOut(800);
     });
   });
+
+//------------------------加入收藏---------------------------------//
+
+$('.restaurant-favorite span a').click(function () {
+    $('.restaurant-favorite span a').toggleClass("add");
+});
 
 //--------------------ajax讀取其他頁面-----------------------------//
   

@@ -130,6 +130,17 @@ $('.product-info').click(function () {
           $('.restaurant-details').load("ajax/product-search-list6.html");
             break;
        }
+       
+       
+       
+       $(this).siblings().find(".product-info").addClass("product-bgc");  
+       $(this).siblings().find(".product-info").removeClass("product-bgc");
+       $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+       
+       
   });
 
+
+
+  
 });

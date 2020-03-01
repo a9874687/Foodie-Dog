@@ -50,6 +50,9 @@
  color: rgb(158, 88, 99);
 }
 @media (min-width: 320px) and (max-width: 374px){
+  .top-logo a img{
+    margin-left: 10px;
+  }
   .showmenu{
     margin-top: 35px;
     margin-right: 25px
@@ -303,7 +306,7 @@
 #food-type {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(246, 242, 242);
   overflow: hidden;
 }
 #food-type > .container {
@@ -525,7 +528,7 @@
 /*---------------------------------footer區塊-----------------------*/
 
 #footer {
-  background-color: #f5f5f5;
+  background-color: rgb(233, 233, 233);
 }
 #footer > .container {
   max-width: 1140px;
@@ -712,7 +715,7 @@
 .critic > a {
   font-family: "Noto Sans TC";
   color: black;
-  background-color: rgb(190, 184, 184);
+  background-color: rgb(233, 233, 233);
   border-radius: 30px;
   text-align: center;
   letter-spacing: 0.2em;
@@ -734,7 +737,7 @@
   text-align: center;
 }
 .distance > a {
-  background-color: rgb(190, 184, 184);
+  background-color: rgb(233, 233, 233);
   border-radius: 30px;
   border-radius: 30px;
   text-align: center;
@@ -772,7 +775,7 @@
   text-align: center;
 }
 .consumption > a {
-  background-color: rgb(190, 184, 184);
+  background-color: rgb(233, 233, 233);
   border-radius: 30px;
   border-radius: 30px;
   text-align: center;
@@ -1138,7 +1141,7 @@
 .write-comment {
   background-color: #bcaaa4;
   border-radius: 8px;
-  width: 150px;
+  width: 100px;
   height: 50px;
 }
 .write-comment > img {
@@ -1150,7 +1153,7 @@
   text-decoration: none;
   font-family: "Noto Sans TC";
   line-height: 50px;
-  font-size: 22px;
+  font-size: 16px;
   color: #fff;
 }
 .product-comment-content {
@@ -1254,7 +1257,7 @@
 .restaurant-favorite {
   background-color: #bcaaa4;
   border-radius: 8px;
-  width: 150px;
+  width: 100px;
   height: 50px;
 }
 .restaurant-favorite > img {
@@ -1266,7 +1269,7 @@
   text-decoration: none;
   font-family: "Noto Sans TC";
   line-height: 50px;
-  font-size: 22px;
+  font-size: 16px;
   color: #fff;
 }
 .comment > .container {
@@ -1286,14 +1289,20 @@
   max-width: 1140px;
   flex-wrap: wrap;
 }
+.avatar img{
+  width: 70px;
+}
+.avatar-info img{
+  width: 16px;
+}
 .comment-list h3 {
   font-family: "Noto Sans TC";
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   padding: 16px;
 }
 .comment-list span {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: bold;
   padding-left: 22px;
 }
@@ -1302,6 +1311,7 @@
   margin-top: 20px;
   white-space: wrap;
   letter-spacing: 0.1em;
+  line-height: 1.8;
   font-family: "Noto Sans TC";
 }
 
@@ -1409,6 +1419,9 @@
 #login {
   background-color: #fff;
   margin: 0 auto;
+}
+.close{
+  text-align: right;
 }
 #login > .container {
   display: flex;
@@ -1791,7 +1804,7 @@
   text-align: center;
   text-decoration: none;
   font-family: "Noto Sans TC";
-  padding-right: 10px;
+  padding-right: 40px;
   padding-top: 20px;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -2035,13 +2048,14 @@
   text-align: right;
 }
 .section5 input{
-  background-color:rgb(221, 185, 137);
+  background-color:#3a5eb3;
+  color: #fff;
   font-size: 16px;
   letter-spacing: 0.1em;
 }
 .ch-password {
   width: 88px;
-  margin-left: 62px;
+  margin-left: 70px;
 }
 .ch-password a {
   display: block;
@@ -2190,7 +2204,7 @@
 .inside-page-search-bar img{
   position: absolute;
   top:0;
-  left: 730px;
+  left: 64%;
   width: 40px;
 }
 .inside-page-details{
@@ -2199,7 +2213,7 @@
 .inside-page-details>.container{
   display: flex;
   flex-direction: column;
-  max-width: 1140px;
+  max-width: 960px;
   margin:0 auto;
 }
 .storefront-name{
@@ -2216,9 +2230,10 @@
 }
 .inside-page-storefront img{
   width: 100%;
+  height: 550px;
 }
 .inside-page-storefront-photo img{
-  width:19.7%;
+  width:19.65%;
 }
 .inside-page-details>.container>section{
   display: flex;
@@ -2228,42 +2243,102 @@
 }
 .inside-page-details>.container>section>ul{
   display: flex;
-  position: relative;
+  
 }
 .inside-page-details>.container>section>ul li{
-  margin-left: 50px;
+  margin-left: 35px;
 }
-.inside-page-details>.container>section>ul li a img{
+.details-list1{
+  position: relative;
+  width: 200px;
+  height: 400px;
+  background-color: rgb(238, 210, 173);
+}
+.details-list1 img{
   position: absolute;
-  top:30px;
-  right: -110px;
+  top:20px;
+  right: -60px;
   width: 100%;
   height: 100%;
   box-shadow: 3px 2px 2px 3px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+  transform: skewY(10deg);
 }
-.details-list1{
-  width: 400px;
-  height: 600px;
-  background-color: rgb(238, 210, 173);
-  
+.details-list2{
+  position: relative;
+  width: 250px;
+  height: 400px;
+  background-color: rgb(198, 214, 240);
 }
+.details-list2-info{
+  position: absolute;
+  top:50px;
+  right: -40px;
+  width: 95%;
+  height: 250px;
+  box-shadow: 3px 2px 2px 3px rgba(0, 0, 0, 0.4);
+  background-color: rgb(245, 218, 192);
+  /* background-image: url('../img/product/wuli_cover_fade-01.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+.details-list2-info ul li h2{
+  text-align: center;
+  padding-right: 60px;
+  font-size: 18px;
+  font-family: "Noto Sans TC";
+  font-weight: bold;
+}
+.details-list2-info ul li{
+  width: 100%;
+  padding-top: 20px;
+}
+.details-list2-info ul li span{
+  font-size: 15px;
+  color: black;
+}
+.details-list2-info ul li {
+  text-align: left;
+}
+/* .details-list2 img{
+  position: absolute;
+  top:30px;
+  right: -60px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 2px 2px 3px rgba(0, 0, 0, 0.4);
+} */
 .inside-page-comment{
   margin-bottom: 100px;
 }
 .inside-page-comment > .container {
   display: flex;
-  justify-content: space-between;
   max-width: 1140px;
   margin: auto;
+  justify-content: space-between;
+}
+.inside-page-comment >.container>section{
+  display: flex;
+}
+.inside-page-comment >.container>section>.write-comment{
+  margin-right: 40px;
+}
+.inside-page-comment-title{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 40px;
+  font-family: "Noto Sans TC";
 }
 .inside-page-person-comment > .container {
   display: flex;
-  max-width: 1140px;
+  max-width: 960px;
   margin: auto;
   margin-top: 30px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .inside-page-person-comment-list {
   width: 400px;
   margin-bottom: 30px;
@@ -2275,12 +2350,12 @@
 }
 .inside-page-person-comment-list h3 {
   font-family: "Noto Sans TC";
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   padding: 16px;
 }
 .inside-page-person-comment-list span {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: bold;
   padding-left: 22px;
 }
@@ -2312,7 +2387,127 @@
   font-weight: bold;
 }
 
+@media (min-width: 320px) and (max-width: 767px){
+  .storefront-name h2{
+    margin-left: 10px;
+  }
+  .inside-page-search-bar input{
+    width: 80%;
+  }
+  .inside-page-search-bar img{
+    left: 81%;
+  }
+  .inside-page-storefront img{
+    height: 100%;
+  }
+  .inside-page-storefront-photo img{
+    width: 19%;
+  }
+  .inside-page-details>.container>section{
+    flex-direction: column;
+  }
+  .inside-page-storefront-map iframe{
+    width: 100%;
+    height: 80%;
+  }
+  .inside-page-details>.container>section>ul{
+    margin-top: 30px;
+  }
+  .inside-page-details>.container>section>ul li{
+    margin-left: 15px;
+  }
+  .details-list1 {
+    width: 35%;
+    height: 200px;
+  }
+  .details-list1 img{
+    right: -20px;
+  }
+  .details-list2 {
+    width: 45%;
+    height: 200px;
+  }
+  .details-list2-info{
+    top:30px;
+    right:-20px;
+    height: 200px;
+  }
+  .inside-page-comment >.container>section>.write-comment{
+    margin-right: 10px;
+    width: 70px;
+  }
+  .inside-page-comment >.container>section>.write-comment>span>a{
+    font-size: 14px;
+  }
+  .restaurant-favorite{
+    margin-right: 10px;
+    width: 70px;
+  }
+  .restaurant-favorite span a{
+    font-size: 14px;
+  }
+  .inside-page-comment-title{
+    margin-left: 10px;
+  }
+  .inside-page-person-comment > .container{
+    margin-left: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .storefront-name{
+    margin-left: 20px;
+  }
+  .inside-page-storefront-photo img{
+    width:19.5% ;
+  }
+  .inside-page-details>.container>section{
+    flex-direction: column;
+  }
+  .inside-page-storefront-map iframe{
+    width: 100%;
+    height: 80%;
+  }
+  .inside-page-details>.container>section>ul{
+    margin-top: 30px;
+  }
+  .inside-page-details>.container>section>ul li{
+    margin-left: 30px;
+  }
+  .details-list1 {
+    width: 35%;
+    height: 350px;
+  }
+  .details-list1 img{
+    right: -90px;
+    top: 40px;
+  }
+  .details-list2 {
+    width: 45%;
+    height: 350px;
+  }
+  .details-list2-info{
+    width: 70%;
+    top: 70px;
+    right: -20px;
+    height: 200px;
+  }
+  .inside-page-comment-title{
+    margin-left: 20px;
+  }
+  .restaurant-favorite{
+    margin-right: 40px;
+  }
+  .inside-page-person-comment-list{
+    width: 45%;
+    margin-left: 30px;
+  }
+}
+
+
 .add{
   border-radius:8px;
   background-color: rgb(74, 181, 243);
+}
+.product-bgc{
+  background-color: #f5f5f5;
 }

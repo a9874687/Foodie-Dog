@@ -25,6 +25,7 @@ $(document).ready(function () {
 
   $(".close").click(function () {
     $(".login-contet").hide();
+    $('.bg').fadeOut(800);
   });
 
 //--------------------評分高低下拉式選單-----------------------------//

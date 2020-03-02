@@ -1,26 +1,5 @@
 $(document).ready(function () {
-
-  $(window).resize(function(){
-    if($(window).outerWidth() >768){
-        $("header>.container>.nav").show();
-        $("header>.container>.member-cart>button").hide();
-    }else{
-        $("header>.container>.nav").hide();
-        $("header>.container>.member-cart>button").show();
-        $(".member-cart>button>i").removeClass("fa-times").addClass("fa-bars");
-    }
-}) 
-
-  //-------------------手機漢堡選單-----------------------------//
-  $("#header>.container> section a img").on('click', function() {
-    if($(window).width()<= 374){ 
-      $("#header > .container > section > ul li").fadeToggle(600);
-    };
-  });
-  
-
-  
-    
+ 
   //--------------------登入彈跳視窗關閉按鈕-----------------------------//
 
   $(".close").click(function () {
@@ -131,14 +110,9 @@ $('.product-info').click(function () {
           $('.restaurant-details').load("ajax/product-search-list6.html");
             break;
        }
-       
-       
-       
        $(this).siblings().find(".product-info").addClass("product-bgc");  
        $(this).siblings().find(".product-info").removeClass("product-bgc");
-       $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
-       
-       
+       $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */ 
   });
 
 

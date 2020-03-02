@@ -19,7 +19,7 @@
   line-height: 100px;
 }
 #header > .container > section> ul > li {
-  padding-right: 40px;
+  padding-right: 10px;
   
 }
 #header > .container > section> ul > li > a {
@@ -29,10 +29,14 @@
   text-decoration: none;
   letter-spacing: 0.1em;
   font-family: "Noto Sans TC";
+  padding-right: 10px;
 }
 #header > .container > section> ul > li a img{
   width: 45px;
   margin-top: 25px;
+}
+.ab-border a{
+  border-right: 1px solid #bcaaa4;
 }
 .showmenu{
   display: block;
@@ -50,23 +54,15 @@
  color: rgb(158, 88, 99);
 }
 @media (min-width: 320px) and (max-width: 374px){
-  .top-logo a img{
-    margin-left: 10px;
+  .top-logo a img {
+    padding-left: 10px;
+    width: 95%;
   }
-  .showmenu{
-    margin-top: 35px;
-    margin-right: 25px
+  #header > .container > section > ul > li {
+    padding-right: 10px;
   }
-  .showmenu img{
-    display: block;
-  }
-  #header > .container > section> ul{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  #header > .container > section> ul li {
-    display: none;
+  #header > .container > section> ul > li > a{
+    font-size: 13px;
   }
  
 }

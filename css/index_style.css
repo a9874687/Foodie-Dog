@@ -1662,6 +1662,15 @@
   color: black;
   text-decoration: none;
 }
+@media (min-width: 320px) and (max-width: 374px) {
+  .member-mug-shot img{
+    margin-left: 10px;
+  }
+  .member-personal-info p {
+    padding-top: 0px;
+    margin-bottom: 10px;
+  }
+}
 @media (min-width: 375px) and (max-width: 767px) {
   .member {
     padding-top: 0px;
@@ -1678,7 +1687,7 @@
   }
   .member-personal-info p {
     padding-top: 0px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -1747,32 +1756,36 @@
 }
 .collect-box-1 td {
   width: 190px;
-  border-right: 5px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-right: 10px solid #fff;
+  border-left: 10px solid #fff;
+  border-top: 10px solid #fff;
 }
 .collect-box-1 td a img {
   width: 100%;
 }
 .collect-box-2 td {
   width: 190px;
-  border-right: 5px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-right: 10px solid #fff;
+  border-left: 10px solid #fff;
+  border-top: 10px solid #fff;
 }
 .collect-box-2 td a img {
   width: 100%;
 }
 .collect-box-3 td {
   width: 190px;
-  border-right: 5px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-right: 10px solid #fff;
+  border-left: 10px solid #fff;
+  border-top: 10px solid #fff;
 }
 .collect-box-3 td a img {
   width: 100%;
 }
 .collect-box-4 td {
   width: 190px;
-  border-right: 5px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-right: 10px solid #fff;
+  border-left: 10px solid #fff;
+  border-top: 10px solid #fff;
 }
 .collect-box-4 td a img {
   width: 100%;
@@ -1782,8 +1795,9 @@
 }
 .collect-box-5 td {
   width: 190px;
-  border-right: 5px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-right: 10px solid #fff;
+  border-left: 10px solid #fff;
+  border-top: 10px solid #fff;
 }
 .collect-box-5 td a img {
   width: 100%;
@@ -1881,6 +1895,9 @@
     padding-bottom: 20px;
     padding-left: 40px;
   }
+  .collect-box{
+    padding-top: 25px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .collect-box {
@@ -1888,7 +1905,6 @@
   }
   .collect-title a {
     font-size: 12px;
-    
   }
 }
 /* 全部收藏頁面*/
@@ -1935,6 +1951,24 @@
 .collect-all-page-box > .container > ul li a img {
   width: 100%;
 }
+@media (min-width: 320px) and (max-width: 374px) {
+  .collect > .container {
+    padding-left: 20px;
+  }
+
+  .collect-all-page-box > .container > ul {
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .collect-all-page-box > .container > ul > li {
+      width: 40%;
+    height: auto;
+    margin-left: 6%;
+    margin-right: 1%;
+    margin-top: 6%;
+  }
+}
+
 @media (min-width: 375px) and (max-width: 767px) {
   .collect > .container {
     padding-left: 20px;
@@ -1945,11 +1979,12 @@
     /* flex-direction: column; */
   }
   .collect-all-page-box > .container > ul > li {
+    
     width: 40%;
     height: auto;
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-top: 20px;
+    margin-left: 6%;
+    margin-right: 1%;
+    margin-top: 6%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1962,9 +1997,9 @@
   .collect-all-page-box > .container > ul > li {
     width: 20%;
     height: auto;
-    margin-left: 25px;
-    margin-right: 10px;
-    margin-top: 20px;
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-top: 3%;
   }
 }
 @media (min-width: 992px) and (max-width: 1124px) {
@@ -2128,7 +2163,8 @@
   line-height: 32px;
   font-family: "Noto Sans TC";
 }
-@media (min-width: 375px) and (max-width: 767px) {
+
+@media (min-width: 320px) and (max-width: 374px) {
   .member-edit > .container {
     flex-direction: column;
   }
@@ -2136,10 +2172,13 @@
     display: flex;
   }
   .personal-file {
-    padding-left: 70px;
+    margin-left: 26%;
   }
   .change-password {
     padding-left: 25px;
+  }
+  .member-edit-headsticker{
+    padding-left: 15px;
   }
   .member-edit > .container > ul li a {
     font-size: 14px;
@@ -2148,19 +2187,85 @@
     padding-left: 0px;
   }
   .section2 {
+    font-size: 13px;
     padding-left: 15px;
   }
   .section2 input {
-    width: 50%;
+    width: 67%;
+    margin-left: 6%;
   }
   .introduction textarea {
     width: 68%;
+    max-height: 100%;
+    margin-left: 7%;
   }
   .section3 {
+    font-size: 13px;
     padding-left: 15px;
   }
   .section3 input {
-    width: 50%;
+    width: 67%;
+    margin-left: 6%;
+  }
+  .section5{
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  .ch-password {
+    margin-left: 82px;
+  }
+  .forget-password {
+    margin-left: 82px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .member-edit > .container {
+    flex-direction: column;
+  }
+  .member-edit > .container > ul {
+    display: flex;
+    margin-left: -5%;
+  }
+  .personal-file {
+    margin-left: 26%;
+  }
+  .change-password {
+    padding-left: 25px;
+  }
+  .member-edit-headsticker{
+    padding-left: 15px;
+  }
+  .member-edit > .container > ul li a {
+    font-size: 14px;
+  }
+  .section1 {
+    padding-left: 0px;
+  }
+  .section2 {
+    font-size: 13px;
+    padding-left: 15px;
+  }
+  .section2 input {
+    width: 67%;
+    margin-left: 6%;
+  }
+  .introduction textarea {
+    width: 68%;
+    max-height: 100%;
+    margin-left: 7%;
+  }
+  .section3 {
+    font-size: 13px;
+    padding-left: 15px;
+  }
+  .section3 input {
+    width: 67%;
+    margin-left: 6%;
+  }
+  .section5{
+    margin-right: 10%;
+    margin-top: 5%;
   }
   .ch-password {
     margin-left: 82px;

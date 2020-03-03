@@ -1,10 +1,68 @@
 $(document).ready(function () {
- 
+
+ //--------------------登入頁面彈跳視窗-----------------------------//
+
+ $(function () {
+  $('.login-btn').click(function () {
+    $('.bg').fadeIn(200);
+    $('.login-contet').fadeIn(600);
+  });
+  $('.bg').click(function () {
+    $('.bg').fadeOut(200);
+    $('.login-contet').fadeOut(600);
+  });
+});
+
+//--------------------評論頁面彈跳視窗-----------------------------//
+
+  $(function () {
+    $('.write-comment span a').click(function () {
+      $('.bg').fadeIn(200);
+      $('.product-comment-content').fadeIn(600);
+    });
+    $('.bg').click(function () {
+      $('.bg').fadeOut(200);
+      $('.product-comment-content').fadeOut(600);
+    });
+  });
+
+//--------------------彈跳視窗置中---------------------------------//
+
+/*登入彈跳視窗置中*/
+  function centerHandler(){/*設定置中的函式*/
+  var scrollDist=$(window).scrollTop();/*取得捲動長度*/
+  var myTop=($(window).height()-$(".login-contet").height())/2+scrollDist;
+  /*取得垂直中央位置*/
+  var myLeft=($(window).width()-$(".login-contet").width())/2;
+  /*取得水平中央位置*/
+  $(".login-contet").offset({top:myTop,left:myLeft});
+  /*設定區塊於水平與垂直置中*/
+  }
+  centerHandler (); /*呼叫置中函式，使廣告區塊置中*/
+  $(window).scroll(centerHandler); /*當網頁捲動時呼叫置中函式*/
+  $(window).resize(centerHandler); /*當視窗縮放時呼叫置中函式*/
+
+
+/*評論彈跳視窗置中*/
+  function centerHandler_comment(){/*設定置中的函式*/
+  var scrollDist=$(window).scrollTop();/*取得捲動長度*/
+  var mycommentTop=($(window).height()-$(".product-comment-content").height())/2+scrollDist;
+  /*取得垂直中央位置*/
+  var mycommentLeft=($(window).width()-$(".product-comment-content").width())/2;
+  /*取得水平中央位置*/
+  $(".product-comment-content").offset({top:mycommentTop,left:mycommentLeft});
+  /*設定區塊於水平與垂直置中*/
+  }
+  centerHandler (); /*呼叫置中函式，使廣告區塊置中*/
+  $(window).scroll(centerHandler_comment); /*當網頁捲動時呼叫置中函式*/
+  $(window).resize(centerHandler_comment); /*當視窗縮放時呼叫置中函式*/
+
   //--------------------登入彈跳視窗關閉按鈕-----------------------------//
 
   $(".close").click(function () {
-    $(".login-contet").hide();
-    $('.bg').fadeOut(800);
+    $('.bg').fadeOut(200);
+    $(".login-contet").fadeOut(600);
+    $(".product-comment-content").fadeOut(600);
   });
 
 //--------------------評分高低下拉式選單-----------------------------//
@@ -52,32 +110,6 @@ $('.inside-page-storefront-photo img').hover(function () {
   $(".inside-page-storefront-photo img").removeClass();
 });
 
-//--------------------登入頁面彈跳視窗-----------------------------//
-
-  $(function () {
-    $('.login-btn').click(function () {
-      $('.bg').fadeIn(200);
-      $('.login-contet').fadeIn(600);
-    });
-    $('.bg').click(function () {
-      $('.bg').fadeOut(800);
-      $('.login-contet').fadeOut(800);
-    });
-  });
-
-//--------------------評論頁面彈跳視窗-----------------------------//
-
-  $(function () {
-    $('.write-comment span a').click(function () {
-      $('.bg').fadeIn(200);
-      $('.product-comment-content').fadeIn(600);
-    });
-    $('.bg').click(function () {
-      $('.bg').fadeOut(800);
-      $('.product-comment-content').fadeOut(800);
-    });
-  });
-
 //------------------------加入收藏---------------------------------//
 
 $('.restaurant-favorite span a').click(function () {
@@ -116,18 +148,6 @@ $('.product-info').click(function () {
   });
 
 
-  function centerHandler(){/*設定置中的函式*/
-    var scrollDist=$(window).scrollTop();/*取得捲動長度*/
-    var myTop=($(window).height()-$(".login-contet").height())/2+scrollDist;
-    /*取得垂直中央位置*/
-    var myLeft=($(window).width()-$(".login-contet").width())/2;
-    /*取得水平中央位置*/
-    $(".login-contet").offset({top:myTop,left:myLeft});
-    /*設定區塊於水平與垂直置中*/
-    }
-    
-    centerHandler (); /*呼叫置中函式，使廣告區塊置中*/
-    $(window).scroll(centerHandler); /*當網頁捲動時呼叫置中函式*/
-    $(window).resize(centerHandler); /*當視窗縮放時呼叫置中函式*/
+  
   
 });

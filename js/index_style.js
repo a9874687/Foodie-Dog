@@ -44,18 +44,15 @@ $(document).ready(function () {
 
 
 /*評論彈跳視窗置中*/
-  function centerHandler_comment(){/*設定置中的函式*/
-  var scrollDist=$(window).scrollTop();/*取得捲動長度*/
+  function centerHandler_comment(){
+  var scrollDist=$(window).scrollTop();
   var mycommentTop=($(window).height()-$(".product-comment-content").height())/2+scrollDist;
-  /*取得垂直中央位置*/
   var mycommentLeft=($(window).width()-$(".product-comment-content").width())/2;
-  /*取得水平中央位置*/
   $(".product-comment-content").offset({top:mycommentTop,left:mycommentLeft});
-  /*設定區塊於水平與垂直置中*/
   }
-  centerHandler (); /*呼叫置中函式，使廣告區塊置中*/
-  $(window).scroll(centerHandler_comment); /*當網頁捲動時呼叫置中函式*/
-  $(window).resize(centerHandler_comment); /*當視窗縮放時呼叫置中函式*/
+  centerHandler ();
+  $(window).scroll(centerHandler_comment);
+  $(window).resize(centerHandler_comment);
 
   //--------------------登入彈跳視窗關閉按鈕-----------------------------//
 

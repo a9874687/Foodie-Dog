@@ -15,11 +15,11 @@ $(document).ready(function() {
   //--------------------評論頁面彈跳視窗-----------------------------//
   $(function() {
       $('.write-comment span a').click(function() {
-          $('.bg').fadeIn(200);
+          $('.comment-bg').fadeIn(200);
           $('.product-comment-content').fadeIn(600);
       });
-      $('.bg').click(function() {
-          $('.bg').fadeOut(200);
+      $('.comment-bg').click(function() {
+          $('.comment-bg').fadeOut(200);
           $('.product-comment-content').fadeOut(600);
       });
   });
@@ -64,7 +64,7 @@ $(document).ready(function() {
   $('.critic').click(function() {
       event.preventDefault();
       $('.critic>a').toggleClass('color');
-      $('.critic-open').toggleClass('border-radius-bottom color').slideToggle();
+      $('.critic-open').slideToggle().toggleClass('border-radius-bottom color');
       $('.critic').toggleClass('border-radius-top color');
   });
 

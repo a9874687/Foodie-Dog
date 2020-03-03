@@ -977,6 +977,7 @@
 }
 
 .consumption > a {
+	font-size: 18px;
 	background-color: rgb(233, 233, 233);
 	border-radius: 30px;
 	text-align: center;
@@ -1005,6 +1006,7 @@
 }
 
 .consumption a {
+	font-size: 16px;
 	font-family: "Noto Sans TC";
 	letter-spacing: 0.2em;
 	text-decoration: none;
@@ -1393,7 +1395,7 @@
 	}
 
 	.restaurant-info-content h2 {
-		text-align: center;
+		text-align: left;
 	}
 }
 
@@ -1417,7 +1419,7 @@
 	}
 
 	.restaurant-info-content h2 {
-		text-align: center;
+		text-align: left;
 	}
 }
 
@@ -1445,7 +1447,7 @@
 	}
 
 	.restaurant-info-content h2 {
-		text-align: center;
+		text-align: left;
 	}
 }
 

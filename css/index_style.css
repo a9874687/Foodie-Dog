@@ -2024,12 +2024,12 @@
 	max-width: 600px;
 	height: 655px;
 	position: fixed;
-  	/* top: 25%; */
-  /* margin-top: -150px; */
+  	top: 50%;
+  margin-top: -300px;
 	background: #fff;
 	z-index: 30;
-    /* left: 50%; */
-  /* margin-left: -300px; */
+    left: 50%;
+  margin-left: -300px;
 }
 
 #login {
@@ -3711,5 +3711,9 @@
 	z-index: 3;
 	top: 0;
 	left: 0;
+	opacity: 0.5;
+}
+hr{
+	width: 400px;
 	opacity: 0.5;
 }

@@ -26,32 +26,32 @@ $(document).ready(function() {
 
   //--------------------彈跳視窗置中---------------------------------//
   /*登入彈跳視窗置中*/
-  function centerHandler() {
-      var scrollDist = $(window).scrollTop();
-      var myTop = ($(window).height() - $(".login-contet").height()) / 2 + scrollDist;
-      var myLeft = ($(window).width() - $(".login-contet").width()) / 2;
-      $(".login-contet").offset({
-          top: myTop,
-          left: myLeft
-      });
-  }
-  centerHandler();
-  $(window).scroll(centerHandler);
-  $(window).resize(centerHandler);
+//   function centerHandler() {
+//       var scrollDist = $(window).scrollTop();
+//       var myTop = ($(window).height() - $(".login-contet").height()) / 2 + scrollDist;
+//       var myLeft = ($(window).width() - $(".login-contet").width()) / 2;
+//       $(".login-contet").offset({
+//           top: myTop,
+//           left: myLeft
+//       });
+//   }
+//   centerHandler();
+//   $(window).scroll(centerHandler);
+//   $(window).resize(centerHandler);
 
-  /*評論彈跳視窗置中*/
-  function centerHandler_comment() {
-      var scrollDist = $(window).scrollTop();
-      var mycommentTop = ($(window).height() - $(".product-comment-content").height()) / 2 + scrollDist;
-      var mycommentLeft = ($(window).width() - $(".product-comment-content").width()) / 2;
-      $(".product-comment-content").offset({
-          top: mycommentTop,
-          left: mycommentLeft
-      });
-  }
-  centerHandler();
-  $(window).scroll(centerHandler_comment);
-  $(window).resize(centerHandler_comment);
+//   /*評論彈跳視窗置中*/
+//   function centerHandler_comment() {
+//       var scrollDist = $(window).scrollTop();
+//       var mycommentTop = ($(window).height() - $(".product-comment-content").height()) / 2 + scrollDist;
+//       var mycommentLeft = ($(window).width() - $(".product-comment-content").width()) / 2;
+//       $(".product-comment-content").offset({
+//           top: mycommentTop,
+//           left: mycommentLeft
+//       });
+//   }
+//   centerHandler();
+//   $(window).scroll(centerHandler_comment);
+//   $(window).resize(centerHandler_comment);
 
   //--------------------登入彈跳視窗關閉按鈕-----------------------------//
   $(".close").click(function() {
@@ -64,24 +64,24 @@ $(document).ready(function() {
   $('.critic').click(function() {
       event.preventDefault();
       $('.critic>a').toggleClass('color');
-      $('.critic-open').slideToggle().toggleClass('border-radius-bottom color');
-      $('.critic').toggleClass('border-radius-top color');
+      $('.critic-open').slideToggle();
+      $('.critic').toggleClass('color');
   });
 
   //--------------------最佳距離下拉式選單-----------------------------//
   $('.distance').click(function() {
       event.preventDefault();
       $('.distance>a').toggleClass('color');
-      $('.distance-open').toggleClass('border-radius-bottom color').slideToggle();
-      $('.distance').toggleClass('border-radius-top color');
+      $('.distance-open').slideToggle();
+      $('.distance').toggleClass('color');
   });
 
   //--------------------每人均消下拉式選單-----------------------------//
   $('.consumption').click(function() {
       event.preventDefault();
       $('.consumption>a').toggleClass('color');
-      $('.consumption-open').toggleClass('border-radius-bottom color').slideToggle();
-      $('.consumption').toggleClass('border-radius-top color');
+      $('.consumption-open').slideToggle();
+      $('.consumption').toggleClass('color');
   });
 
   //--------------------滑鼠移入更換大圖-----------------------------//

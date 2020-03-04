@@ -26,18 +26,18 @@ $(document).ready(function() {
 
   //--------------------彈跳視窗置中---------------------------------//
   /*登入彈跳視窗置中*/
-//   function centerHandler() {
-//       var scrollDist = $(window).scrollTop();
-//       var myTop = ($(window).height() - $(".login-contet").height()) / 2 + scrollDist;
-//       var myLeft = ($(window).width() - $(".login-contet").width()) / 2;
-//       $(".login-contet").offset({
-//           top: myTop,
-//           left: myLeft
-//       });
-//   }
-//   centerHandler();
-//   $(window).scroll(centerHandler);
-//   $(window).resize(centerHandler);
+  function centerHandler() {
+      var scrollDist = $(window).scrollTop();
+      var myTop = ($(window).height() - $(".login-contet").height()) / 2 + scrollDist;
+      var myLeft = ($(window).width() - $(".login-contet").width()) / 2;
+      $(".login-contet").offset({
+          top: myTop,
+          left: myLeft
+      });
+  }
+  centerHandler();
+  $(window).scroll(centerHandler);
+  $(window).resize(centerHandler);
 
   /*評論彈跳視窗置中*/
   function centerHandler_comment() {

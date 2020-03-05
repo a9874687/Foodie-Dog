@@ -295,12 +295,16 @@
 }
 
 .box-title {
+	position: absolute;
 	text-align: center;
+	top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 	font-size: 18px;
 	font-weight: bold;
 	font-family: "Lobster", cursive;
 	color: white;
-	line-height: 150px;
+	/* line-height: 150px; */
   /* line-height: 250px; */
 }
 

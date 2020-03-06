@@ -24,35 +24,6 @@ $(document).ready(function() {
       });
   });
 
-  //--------------------彈跳視窗置中---------------------------------//
-  /*登入彈跳視窗置中*/
-//   function centerHandler() {
-//       var scrollDist = $(window).scrollTop();
-//       var myTop = ($(window).height() - $(".login-contet").height()) / 2 + scrollDist;
-//       var myLeft = ($(window).width() - $(".login-contet").width()) / 2;
-//       $(".login-contet").offset({
-//           top: myTop,
-//           left: myLeft
-//       });
-//   }
-//   centerHandler();
-//   $(window).scroll(centerHandler);
-//   $(window).resize(centerHandler);
-
-//   /*評論彈跳視窗置中*/
-//   function centerHandler_comment() {
-//       var scrollDist = $(window).scrollTop();
-//       var mycommentTop = ($(window).height() - $(".product-comment-content").height()) / 2 + scrollDist;
-//       var mycommentLeft = ($(window).width() - $(".product-comment-content").width()) / 2;
-//       $(".product-comment-content").offset({
-//           top: mycommentTop,
-//           left: mycommentLeft
-//       });
-//   }
-//   centerHandler();
-//   $(window).scroll(centerHandler_comment);
-//   $(window).resize(centerHandler_comment);
-
   //--------------------登入彈跳視窗關閉按鈕-----------------------------//
   $(".close").click(function() {
       $('.bg').fadeOut(200);

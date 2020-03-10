@@ -3175,6 +3175,7 @@
 /*---------------------------------關於我們-----------------------*/
 .about {
 	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 .about > .container {
@@ -3189,7 +3190,7 @@
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
 .about-img1 {
